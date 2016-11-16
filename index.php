@@ -6,6 +6,7 @@
 <title>Радио Julian</title>
 <link rel="stylesheet" href="/css/uikit.almost-flat.min.css" />
 <link rel="stylesheet" href="/css/main.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 <script src="js/jquery-3.1.0.min.js"></script>
 <script src="js/uikit.min.js"></script>
 </head>
@@ -24,11 +25,11 @@
     </div>
     <div class="menu-sb">
       <ul>
-        <li><a href="#"><div class="centered-2"><img src="/img/menu/jr-logo.svg"/>JULIAN RADIO</div></a></li>
-        <li><a href="#"><div class="centered-2"><img src="/img/menu/news.svg"/>Новости</div></a></li>
-        <li><a href="#"><div class="centered-2"><img src="/img/menu/jul.svg"/>Юлиан</div></a></li>
-        <li><a href="#"><div class="centered-2"><img src="/img/menu/program.svg"/>Программа</div></a></li>
-        <li><a href="#"><div class="centered-2"><img src="/img/menu/contacts.svg"/>Контакты</div></a></li>
+        <li><a class="menu_logo_a" href="#"><div class="uk-vertical-align centered-2 "><div class="uk-vertical-align-middle menu_logo_div"><img src="/img/menu/jr-logo.svg"/>JULIAN RADIO</div></div></a></li>
+        <li><a href="#"><div class="uk-vertical-align centered-2"><div class="uk-vertical-align-middle"><img src="/img/menu/news.svg"/>Новости</div></div></a></li>
+        <li><a href="#"><div class="uk-vertical-align centered-2"><div class="uk-vertical-align-middle"><img src="/img/menu/jul.svg"/>Юлиан</div></div></a></li>
+        <li><a href="#"><div class="uk-vertical-align centered-2"><div class="uk-vertical-align-middle"><img src="/img/menu/program.svg"/>Программа</div></div></a></li>
+        <li><a href="#"><div class="uk-vertical-align centered-2"><div class="uk-vertical-align-middle"><img src="/img/menu/contacts.svg"/>Контакты</div></div></a></li>
       </ul>
     </div>
 
