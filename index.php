@@ -179,7 +179,7 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                 </li>
             </ul>
         </div>
-        <div class="player main-player">
+        <div class="main-player">
             <div id="jquery_jplayer_1" class="jp-jplayer"></div>
             <ul id="jp_container_1" class="uk-grid uk-grid-width-1-3 jp-audio-stream" role="application" aria-label="media player">
                 <li class="uk-vertical-align uk-text-right">
@@ -196,12 +196,14 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                         </div>
                     </div>
                 </li>
-                <li class="uk-vertical-align jp-controls">
+                <li class="jp-controls">
                     <!--                    <img class="uk-vertical-align-middle uk-img-preserve play_img " src="/img/play.png" alt="">-->
-                    <div class="uk-vertical-align-middle player-button">
+
+                    <div class="round1"></div>
+                    <div class="player-button ">
                         <button class="jp-play big-button" role="button" tabindex="0">
                             <img src="/img/triangle60p.svg" role="button" class="play">
-                            <img src="/img/triangle-pause60p.svg" role="button" class="pause">
+                            <img src="/img/triangle-pause60p.svg" role="button" class="pause" >
                         </button>
                     </div>
                 </li>
