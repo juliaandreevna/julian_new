@@ -179,8 +179,9 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                 </li>
             </ul>
         </div>
-        <div class="player">
-            <ul class="uk-grid uk-grid-width-1-3 ">
+        <div class="player main-player">
+            <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+            <ul id="jp_container_1" class="uk-grid uk-grid-width-1-3 jp-audio-stream" role="application" aria-label="media player">
                 <li class="uk-vertical-align uk-text-right">
                     <div class="uk-vertical-align-middle">
                         <div class="order_speed">
@@ -195,118 +196,37 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                         </div>
                     </div>
                 </li>
-                <li class="uk-vertical-align">
+                <li class="uk-vertical-align jp-controls">
                     <!--                    <img class="uk-vertical-align-middle uk-img-preserve play_img " src="/img/play.png" alt="">-->
-                    <div class="uk-vertical-align-middle main-player">
-                        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-                        <div id="jp_container_1" style="margin: 20px auto;" class="jp-audio-stream" role="application"
-                             aria-label="media player">
-                            <div class="jp-controls">
-                                <div class="player-button">
-                                    <button class="jp-play big-button" role="button" tabindex="0">
-                                        <img src="/img/triangle60p.svg" role="button" class="play">
-                                        <img src="/img/triangle-pause60p.svg" role="button" class="pause">
-                                    </button>
-                                </div>
-                            </div>
-                            <span class="buffering"><span class="loading"></span></span>
-
-                            <div class="jp-type-single">
-                                <div class="jp-gui jp-interface">
-                                    <div class="jp-volume-controls">
-                                        <div class="player-line">
-                                            <div class="volume">
-                                                <button class="jp-mute" role="button" tabindex="0">
-                                                    <img src="/img/volume-all.png" class="on" style="width: 25px;">
-                                                    <img src="/img/volume-all-off.png" class="off" style="width: 25px;">
-                                                </button>
-                                                <div class="jp-volume-bar">
-                                                    <div class="volume-bar">
-                                                        <div class="jp-volume-bar-value"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="uk-vertical-align-middle player-button">
+                        <button class="jp-play big-button" role="button" tabindex="0">
+                            <img src="/img/triangle60p.svg" role="button" class="play">
+                            <img src="/img/triangle-pause60p.svg" role="button" class="pause">
+                        </button>
                     </div>
                 </li>
-                <li class="uk-vertical-align uk-text-left">
-                    <div class="uk-vertical-align-middle main-player">
-                        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-                        <div id="jp_container_1" class="jp-audio-stream" role="application"
-                             aria-label="media player">
-                            <div class="jp-controls">
-                                <div class="player-button">
-                                    <button class="jp-play big-button" role="button" tabindex="0">
-                                        <img src="/img/triangle60p.svg" role="button" class="play">
-                                        <img src="/img/triangle-pause60p.svg" role="button" class="pause">
+                <li class="uk-vertical-align uk-text-left jp-type-single">
+                    <div class="uk-vertical-align-middle jp-gui jp-interface">
+                        <div class="jp-volume-controls">
+                            <div class="player-line">
+                                <div class="volume">
+                                    <button class="jp-mute" role="button" tabindex="0">
+                                        <img src="/img/volume-all.png" class="on" style="width: 25px;">
+                                        <img src="/img/volume-all-off.png" class="off" style="width: 25px;">
                                     </button>
-                                </div>
-                            </div>
-                            <div class="jp-type-single">
-                                <div class="jp-gui jp-interface">
-                                    <div class="jp-volume-controls">
-                                        <div class="player-line">
-                                            <div class="volume">
-                                                <button class="jp-mute" role="button" tabindex="0">
-                                                    <img src="/img/volume-all.png" class="on" style="width: 25px;">
-                                                    <img src="/img/volume-all-off.png" class="off" style="width: 25px;">
-                                                </button>
-                                                <div class="jp-volume-bar">
-                                                    <div class="volume-bar">
-                                                        <div class="jp-volume-bar-value"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div class="jp-volume-bar">
+                                        <div class="volume-bar">
+                                            <div class="jp-volume-bar-value"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+<!--                        <span class="buffering"><span class="loading"></span></span>-->
                     </div>
                 </li>
             </ul>
         </div>
-
-        <!--        <div class="main-player">-->
-        <!--            <div id="jquery_jplayer_1" class="jp-jplayer"></div>-->
-        <!--            <div id="jp_container_1" style="margin: 20px auto;" class="jp-audio-stream" role="application"-->
-        <!--                 aria-label="media player">-->
-        <!--                <div class="jp-controls">-->
-        <!--                    <div class="player-button">-->
-        <!--                        <button class="jp-play big-button" role="button" tabindex="0">-->
-        <!--                            <img src="/img/triangle60p.svg" role="button" class="play">-->
-        <!--                            <img src="/img/triangle-pause60p.svg" role="button" class="pause">-->
-        <!--                        </button>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--                <div class="jp-type-single">-->
-        <!--                    <div class="jp-gui jp-interface">-->
-        <!--                        <div class="jp-volume-controls">-->
-        <!--                            <div class="player-line">-->
-        <!--                                <span class="buffering"><span class="loading"></span></span>-->
-        <!--                                <div class="volume">-->
-        <!--                                    <button class="jp-mute" role="button" tabindex="0">-->
-        <!--                                        <img src="/img/volume-all.png" class="on" style="width: 25px;">-->
-        <!--                                        <img src="/img/volume-all-off.png" class="off" style="width: 25px;">-->
-        <!--                                    </button>-->
-        <!--                                    <div class="jp-volume-bar">-->
-        <!--                                        <div class="volume-bar">-->
-        <!--                                            <div class="jp-volume-bar-value"></div>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-
         <div class="all_news">
             <ul class="notices">
                 <li>

@@ -377,6 +377,7 @@ img.play_img {
 }
 
 .main-player .jp-play .pause {
+
     display: none;
 }
 .main-player .jp-state-playing .jp-play .play {
