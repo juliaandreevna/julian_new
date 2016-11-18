@@ -67,19 +67,55 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
             });
         });
     </script>
-    <script src="/js/jquery-ui/jquery-ui.min.js"></script>
-    <script>
-        $(function () {
-            $("#volume").slider({
-                orientation: "horizontal",
-                range: "min",
-                max: 100,
-                value: 80,
-                //slide: function1,
-                //change: function2
+    <script type="text/javascript" src="/jplayer/jquery.jplayer.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function () {
+
+            var stream = {
+                    title: "Julian Radio",
+                    mp3: "http://45.62.245.147:8069/my.mp3"
+                },
+                ready = false;
+
+            $("#jquery_jplayer_1").jPlayer({
+                ready: function (event) {
+                    ready = true;
+                    $(this).jPlayer("setMedia", stream);
+                },
+                pause: function () {
+                    $(this).jPlayer("clearMedia");
+                },
+                error: function (event) {
+                    if (ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
+                        // Setup the media stream again and play it.
+                        $(this).jPlayer("setMedia", stream).jPlayer("play");
+                    }
+                },
+                swfPath: "/js/jplayer",
+                supplied: "mp3",
+                preload: "none",
+                wmode: "window",
+                useStateClassSkin: true,
+                autoBlur: false,
+                keyEnabled: true
             });
         });
+        //]]>
     </script>
+    <!--    <script src="/js/jquery-ui/jquery-ui.min.js"></script>-->
+    <!--    <script>-->
+    <!--        $(function () {-->
+    <!--            $("#volume").slider({-->
+    <!--                orientation: "horizontal",-->
+    <!--                range: "min",-->
+    <!--                max: 100,-->
+    <!--                value: 80,-->
+    <!--                //slide: function1,-->
+    <!--                //change: function2-->
+    <!--            });-->
+    <!--        });-->
+    <!--    </script>-->
 </head>
 <body>
 <div class="main">
@@ -136,7 +172,7 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
         <div class="julian_news">
             <ul class="notices">
                 <li>
-                    <p>Новости Julian: Премьера нового альбома 2016 - лето! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                    <!--                    <p>Новости Julian: Премьера нового альбома 2016 - лето! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>-->
                     <?php foreach ($notices as $notice) { ?>
                         <p><?php echo $notice["text"]; ?>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
                     <?php }; ?>
@@ -160,35 +196,128 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                     </div>
                 </li>
                 <li class="uk-vertical-align">
-                    <img class="uk-vertical-align-middle uk-img-preserve play_img " src="/img/play.png" alt="">
+                    <!--                    <img class="uk-vertical-align-middle uk-img-preserve play_img " src="/img/play.png" alt="">-->
+                    <div class="uk-vertical-align-middle main-player">
+                        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                        <div id="jp_container_1" style="margin: 20px auto;" class="jp-audio-stream" role="application"
+                             aria-label="media player">
+                            <div class="jp-controls">
+                                <div class="player-button">
+                                    <button class="jp-play big-button" role="button" tabindex="0">
+                                        <img src="/img/triangle60p.svg" role="button" class="play">
+                                        <img src="/img/triangle-pause60p.svg" role="button" class="pause">
+                                    </button>
+                                </div>
+                            </div>
+                            <span class="buffering"><span class="loading"></span></span>
+
+                            <div class="jp-type-single">
+                                <div class="jp-gui jp-interface">
+                                    <div class="jp-volume-controls">
+                                        <div class="player-line">
+                                            <div class="volume">
+                                                <button class="jp-mute" role="button" tabindex="0">
+                                                    <img src="/img/volume-all.png" class="on" style="width: 25px;">
+                                                    <img src="/img/volume-all-off.png" class="off" style="width: 25px;">
+                                                </button>
+                                                <div class="jp-volume-bar">
+                                                    <div class="volume-bar">
+                                                        <div class="jp-volume-bar-value"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </li>
                 <li class="uk-vertical-align uk-text-left">
-                    <div class="uk-vertical-align-middle volume ">
-                        <button class="jp-mute" role="button" tabindex="0">
-                            <img src="/img/volume-all.png" class="on" style="width: 25px;">
-                            <img src="/img/volume-all-off.png" class="off" style="width: 25px;">
-                        </button>
-                        <div class="jp-volume-bar">
-                            <div class="volume-bar">
-                                <div class="jp-volume-bar-value"></div>
+                    <div class="uk-vertical-align-middle main-player">
+                        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                        <div id="jp_container_1" class="jp-audio-stream" role="application"
+                             aria-label="media player">
+                            <div class="jp-controls">
+                                <div class="player-button">
+                                    <button class="jp-play big-button" role="button" tabindex="0">
+                                        <img src="/img/triangle60p.svg" role="button" class="play">
+                                        <img src="/img/triangle-pause60p.svg" role="button" class="pause">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="jp-type-single">
+                                <div class="jp-gui jp-interface">
+                                    <div class="jp-volume-controls">
+                                        <div class="player-line">
+                                            <div class="volume">
+                                                <button class="jp-mute" role="button" tabindex="0">
+                                                    <img src="/img/volume-all.png" class="on" style="width: 25px;">
+                                                    <img src="/img/volume-all-off.png" class="off" style="width: 25px;">
+                                                </button>
+                                                <div class="jp-volume-bar">
+                                                    <div class="volume-bar">
+                                                        <div class="jp-volume-bar-value"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </li>
             </ul>
         </div>
+
+        <!--        <div class="main-player">-->
+        <!--            <div id="jquery_jplayer_1" class="jp-jplayer"></div>-->
+        <!--            <div id="jp_container_1" style="margin: 20px auto;" class="jp-audio-stream" role="application"-->
+        <!--                 aria-label="media player">-->
+        <!--                <div class="jp-controls">-->
+        <!--                    <div class="player-button">-->
+        <!--                        <button class="jp-play big-button" role="button" tabindex="0">-->
+        <!--                            <img src="/img/triangle60p.svg" role="button" class="play">-->
+        <!--                            <img src="/img/triangle-pause60p.svg" role="button" class="pause">-->
+        <!--                        </button>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <div class="jp-type-single">-->
+        <!--                    <div class="jp-gui jp-interface">-->
+        <!--                        <div class="jp-volume-controls">-->
+        <!--                            <div class="player-line">-->
+        <!--                                <span class="buffering"><span class="loading"></span></span>-->
+        <!--                                <div class="volume">-->
+        <!--                                    <button class="jp-mute" role="button" tabindex="0">-->
+        <!--                                        <img src="/img/volume-all.png" class="on" style="width: 25px;">-->
+        <!--                                        <img src="/img/volume-all-off.png" class="off" style="width: 25px;">-->
+        <!--                                    </button>-->
+        <!--                                    <div class="jp-volume-bar">-->
+        <!--                                        <div class="volume-bar">-->
+        <!--                                            <div class="jp-volume-bar-value"></div>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
         <div class="all_news">
             <ul class="notices">
                 <li>
-                    <p>Все новости: Повторное голосование на EUROVISION 2016
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                    <!--                    <p>Все новости: Повторное голосование на EUROVISION 2016 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>-->
                     <?php foreach ($ya_news as $ya_new) { ?>
                         <p><?php echo $ya_new["name"]; ?>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
                     <?php }; ?>
                 </li>
             </ul>
         </div>
-        <div class="concerts">
+        <div class="conc_org">
             <p>Организация концертов Юлиана
                 <span> <a href="tel:+7 (926) 492-67-67">+7 (926) 492-67-67</a></span>
             </p>
