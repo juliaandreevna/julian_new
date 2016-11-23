@@ -202,7 +202,7 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                     <div class="round1"></div>
                     <div class="player-button ">
                         <button class="jp-play big-button" role="button" tabindex="0">
-                            <img src="/img/triangle60p.svg" role="button" class="play">
+                            <img src="/img/play_circle.svg" role="button" class="play">
                             <img src="/img/triangle-pause60p.svg" role="button" class="pause" >
                         </button>
                     </div>

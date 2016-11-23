@@ -405,10 +405,13 @@ img.play_img {
 
 .main-player button.big-button {
     position: absolute;
-    top: -350px;
+    top: -275px;
     right: 0px;
-    left: 140px;
+    left: 70px;
     bottom: 0px;
+    width: 210px;
+    height: 210px;
+    padding: 0;
     background: none;
     border: none;
     outline: none;
@@ -419,7 +422,7 @@ img.play_img {
 
 
 .round1, .round1:before, .round1:after{
-    border: 9px solid transparent;
+    border: 7px solid transparent;
     border-radius: 50%;
 }
 
@@ -448,10 +451,10 @@ img.play_img {
 }
 
 .round1:before {
-    top: 10px;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
+    top: 7px;
+    bottom: 7px;
+    left: 7px;
+    right: 7px;
     border-top-color: #cf0000;
     border-right-color: #cf0000;
     border-bottom-color: #cf0000;
@@ -466,10 +469,10 @@ img.play_img {
 }
 
 .round1:after {
-    top: 30px;
-    bottom: 30px;
-    left: 30px;
-    right: 30px;
+    top: 27px;
+    bottom: 27px;
+    left: 27px;
+    right: 27px;
     border-top-color: #6699ff;
     border-right-color: #6699ff;
     /*border-bottom-color: #6699ff;*/
