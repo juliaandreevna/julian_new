@@ -181,7 +181,7 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
         </div>
         <div class="main-player">
             <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-            <ul id="jp_container_1" class="uk-grid uk-grid-width-1-3 jp-audio-stream" role="application" aria-label="media player">
+            <ul id="jp_container_1" class="uk-grid uk-grid-collapse uk-grid-width-1-3 jp-audio-stream" role="application" aria-label="media player">
                 <li class="uk-vertical-align uk-text-right">
                     <div class="uk-vertical-align-middle">
                         <div class="order_speed">
@@ -196,15 +196,20 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                         </div>
                     </div>
                 </li>
-                <li class="jp-controls">
-                    <!--                    <img class="uk-vertical-align-middle uk-img-preserve play_img " src="/img/play.png" alt="">-->
+                <li >
+                    <div class="jp-controls controls">
+<!--                    <img class="uk-vertical-align-middle uk-img-preserve play_img " src="/img/play.png" alt="">-->
 
-                    <div class="round1"></div>
-                    <div class="player-button ">
-                        <button class="jp-play big-button" role="button" tabindex="0">
-                            <img src="/img/play_circle.svg" role="button" class="play">
-                            <img src="/img/triangle-pause60p.svg" role="button" class="pause" >
-                        </button>
+<!--                    <div class="round1"></div>-->
+<!--                        <div class="cssload-container">-->
+                            <div class="cssload-whirlpool"></div>
+<!--                        </div>-->
+                        <div class="player-button ">
+                            <button class="jp-play big-button" role="button" tabindex="0">
+                                <img src="/img/play_circle.svg" role="button" class="play">
+                                <img src="/img/pause_circle.svg" role="button" class="pause" >
+                            </button>
+                        </div>
                     </div>
                 </li>
                 <li class="uk-vertical-align uk-text-left jp-type-single">
@@ -213,8 +218,12 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                             <div class="player-line">
                                 <div class="volume">
                                     <button class="jp-mute" role="button" tabindex="0">
-                                        <img src="/img/volume-all.png" class="on" style="width: 25px;">
-                                        <img src="/img/volume-all-off.png" class="off" style="width: 25px;">
+                                        <img src="/img/vol-on.svg" class="on" style="width: 25px;">
+                                        <img src="/img/vol-off.svg" class="off" style="width: 25px;">
+
+<!--                                        <i class="uk-icon-button uk-icon-volume-up on"  >-->
+<!--                                        <i class="uk-icon-button uk-icon-volume-off off"  >-->
+
                                     </button>
                                     <div class="jp-volume-bar">
                                         <div class="volume-bar">

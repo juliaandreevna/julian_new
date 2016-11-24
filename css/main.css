@@ -283,6 +283,7 @@ ul.notices li p {
 .order_speed {
     position: relative;
     top: 38px;
+    margin-right: 50px;
 }
 
 /*кнопка*/
@@ -334,26 +335,32 @@ img.play_img {
 
 /*плеер*/
 
-.main-player .buffering {
-    display: none;
-    color: #fff;
-    font-size: 12px;
-    text-align: center;
+/*.main-player .buffering {*/
+    /*display: none;*/
+    /*color: #fff;*/
+    /*font-size: 12px;*/
+    /*text-align: center;*/
+/*}*/
+/*.main-player .jp-state-seeking .buffering {*/
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
+/*}*/
+/*.main-player .loading {*/
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
+    /*width: 10px;*/
+    /*height: 25px;*/
+    /*background: url(/jplayer/loading.gif) no-repeat center;*/
+    /*background-size: contain;*/
+    /*margin-right: 5px;*/
+    /*margin-left: 5px;*/
+/*}*/
+
+.main-player .controls {
+    position: relative;
+    min-height: 320px;
 }
-.main-player .jp-state-seeking .buffering {
-    display: inline-block;
-    vertical-align: top;
-}
-.main-player .loading {
-    display: inline-block;
-    vertical-align: top;
-    width: 10px;
-    height: 25px;
-    background: url(/jplayer/loading.gif) no-repeat center;
-    background-size: contain;
-    margin-right: 5px;
-    margin-left: 5px;
-}
+
 .main-player .jp-gui .jp-mute {
     background: none;
     border: none;
@@ -365,11 +372,11 @@ img.play_img {
     cursor: pointer;
     width: 100px;
     height: 5px;
-    border: 1px solid #fff;
+    border: 1px solid #333333;
     border-radius: 3px;
 }
 .main-player .jp-gui .volume-bar .jp-volume-bar-value {
-    background: #fff;
+    background: #333333;
     height: 5px;
 }
 
@@ -381,7 +388,6 @@ img.play_img {
 }
 .main-player .jp-state-playing img.pause {
     display: inline-block;
-    margin-left: 5px;
 }
 .main-player .jp-mute .off {
     display: none;
@@ -400,14 +406,14 @@ img.play_img {
 .main-player .player-button {
     padding:0;
     position: relative;
-    /*top: 0px;*/
+    top: 55px;
 }
 
 .main-player button.big-button {
-    position: absolute;
-    top: -275px;
-    right: 0px;
-    left: 70px;
+    /*position: absolute;*/
+    /*top: -275px;*/
+    /*right: 0px;*/
+    /*left: 70px;*/
     bottom: 0px;
     width: 210px;
     height: 210px;
@@ -417,100 +423,253 @@ img.play_img {
     outline: none;
 }
 
-
-    /*анимация*/
-
-
-.round1, .round1:before, .round1:after{
-    border: 7px solid transparent;
-    border-radius: 50%;
+.main-player .play,
+.main-player .pause {
+    height: 200px;
+    width: 200px;
 }
 
 
-.round1{
-    width: 320px;
-    height: 320px;
-    margin: 0 auto;
-    position: relative;
+
+    /*анимация  1*/
+
+
+/*.round1, .round1:before, .round1:after{*/
+    /*border: 7px solid transparent;*/
+    /*border-radius: 50%;*/
+/*}*/
+
+
+/*.round1{*/
+    /*width: 320px;*/
+    /*height: 320px;*/
+    /*margin: 0 auto;*/
+    /*position: relative;*/
+    /*!*border-top-color: #e6e6e6;*!*/
+    /*border-right-color: #e6e6e6;*/
+    /*border-bottom-color: #e6e6e6;*/
+    /*border-left-color: #e6e6e6;*/
+    /*!*-webkit-animation: spin 10s infinite linear;*!*/
+    /*!*animation: spin 10s infinite linear;*!*/
+/*}*/
+
+/*.jp-state-seeking .round1{*/
+    /*-webkit-animation: spin 10s infinite linear;*/
+    /*animation: spin 10s infinite linear;*/
+/*}*/
+
+/*.round1:before, .round1:after {*/
+    /*content: '';*/
+    /*position: absolute;*/
+/*}*/
+
+/*.round1:before {*/
+    /*top: 10px;*/
+    /*bottom: 10px;*/
+    /*left: 10px;*/
+    /*right: 10px;*/
+    /*border-top-color: #cf0000;*/
+    /*border-right-color: #cf0000;*/
+    /*border-bottom-color: #cf0000;*/
+    /*!*border-left-color: #cf0000;*!*/
+    /*!*-webkit-animation: spin 5s infinite linear;*!*/
+    /*!*animation: spin 5s infinite linear;*!*/
+/*}*/
+
+/*.jp-state-seeking .round1:before {*/
+    /*-webkit-animation: spin 5s infinite linear;*/
+    /*animation: spin 5s infinite linear;*/
+/*}*/
+
+/*.round1:after {*/
+    /*top: 30px;*/
+    /*bottom: 30px;*/
+    /*left: 30px;*/
+    /*right: 30px;*/
+    /*border-top-color: #6699ff;*/
+    /*border-right-color: #6699ff;*/
+    /*!*border-bottom-color: #6699ff;*!*/
+    /*border-left-color: #6699ff;*/
+    /*!*-webkit-animation: spin 1s infinite linear;*!*/
+    /*!*animation: spin 1s infinite linear;*!*/
+/*}*/
+
+/*.jp-state-seeking .round1:after {*/
+    /*-webkit-animation: spin 1s infinite linear;*/
+    /*animation: spin 1s infinite linear;*/
+/*}*/
+
+/*@-webkit-keyframes spin {*/
+    /*from {*/
+        /*-webkit-transform: rotate(0deg);*/
+        /*-ms-transform: rotate(0deg);*/
+        /*transform: rotate(0deg);*/
+    /*}*/
+    /*to {*/
+        /*-webkit-transform: rotate(360deg);*/
+        /*-ms-transform: rotate(360deg);*/
+        /*transform: rotate(360deg);*/
+    /*}*/
+/*}*/
+
+/*@keyframes spin {*/
+    /*from {*/
+        /*-webkit-transform: rotate(0deg);*/
+        /*-ms-transform: rotate(0deg);*/
+        /*transform: rotate(0deg);*/
+    /*}*/
+    /*to {*/
+        /*-webkit-transform: rotate(360deg);*/
+        /*-ms-transform: rotate(360deg);*/
+        /*transform: rotate(360deg);*/
+    /*}*/
+/*}*/
+
+
+        /*анимация  2*/
+
+
+/*.cssload-container{*/
+    /*position:relative;*/
+/*}*/
+
+.cssload-whirlpool,
+.cssload-whirlpool::before,
+.cssload-whirlpool::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*border: 7px solid rgb(204,204,204);*/
+    /*border: 7px solid rgb(185, 195, 196);*/
+    border: 7px solid transparent;
+
+    border-radius: 5869px;
+    -o-border-radius: 5869px;
+    -ms-border-radius: 5869px;
+    -webkit-border-radius: 5869px;
+    -moz-border-radius: 5869px;
+}
+
+.cssload-whirlpool {
+    /*border-top-color: #cf0000;*/
+    border-right-color: #cf0000;
+    border-bottom-color: #cf0000;
+    border-left-color: #cf0000;
+
+}
+
+.cssload-whirlpool::before{
+    /*border-top-color: #6699ff;*/
+    border-right-color: #6699ff;
+    border-bottom-color: #6699ff;
+    border-left-color: #6699ff;
+    -webkit-transform: rotate(15deg); /* Chrome y Safari */
+    -moz-transform: rotate(15deg); /* Firefox */
+    -o-transform: rotate(15deg); /* Opera */
+}
+
+.cssload-whirlpool::after {
     /*border-top-color: #e6e6e6;*/
     border-right-color: #e6e6e6;
     border-bottom-color: #e6e6e6;
     border-left-color: #e6e6e6;
-    /*-webkit-animation: spin 10s infinite linear;*/
-    /*animation: spin 10s infinite linear;*/
+    -webkit-transform: rotate(-15deg); /* Chrome y Safari */
+    -moz-transform: rotate(-15deg); /* Firefox */
+    -o-transform: rotate(-15deg); /* Opera */
 }
 
-.jp-state-seeking .round1{
-    -webkit-animation: spin 10s infinite linear;
-    animation: spin 10s infinite linear;
+.cssload-whirlpool {
+    /*margin: -147px 0 0 -147px;*/
+    /*height: 294px;*/
+    /*width: 294px;*/
+
+    margin: -140px 0 0 -140px;
+    height: 266px;
+    width: 266px;
 }
 
-.round1:before, .round1:after {
-    content: '';
-    position: absolute;
+.jp-state-seeking .cssload-whirlpool {
+    animation: cssload-rotate 1150ms linear infinite;
+    -o-animation: cssload-rotate 1150ms linear infinite;
+    -ms-animation: cssload-rotate 1150ms linear infinite;
+    -webkit-animation: cssload-rotate 1150ms linear infinite;
+    -moz-animation: cssload-rotate 1150ms linear infinite;
 }
 
-.round1:before {
-    top: 7px;
-    bottom: 7px;
-    left: 7px;
-    right: 7px;
-    border-top-color: #cf0000;
-    border-right-color: #cf0000;
-    border-bottom-color: #cf0000;
-    /*border-left-color: #cf0000;*/
-    /*-webkit-animation: spin 5s infinite linear;*/
-    /*animation: spin 5s infinite linear;*/
+.cssload-whirlpool::before {
+    /*content: "";*/
+    /*margin: -135px 0 0 -135px;*/
+    /*height: 259px;*/
+    /*width: 259px;*/
+    content: "";
+    margin: -120px 0 0 -120px;
+    height: 226px;
+    width: 226px;
 }
 
-.jp-state-seeking .round1:before {
-    -webkit-animation: spin 5s infinite linear;
-    animation: spin 5s infinite linear;
+.jp-state-seeking .cssload-whirlpool::before {
+    animation: cssload-rotate 1150ms linear infinite;
+    -o-animation: cssload-rotate 1150ms linear infinite;
+    -ms-animation: cssload-rotate 1150ms linear infinite;
+    -webkit-animation: cssload-rotate 1150ms linear infinite;
+    -moz-animation: cssload-rotate 1150ms linear infinite;
 }
 
-.round1:after {
-    top: 27px;
-    bottom: 27px;
-    left: 27px;
-    right: 27px;
-    border-top-color: #6699ff;
-    border-right-color: #6699ff;
-    /*border-bottom-color: #6699ff;*/
-    border-left-color: #6699ff;
-    /*-webkit-animation: spin 1s infinite linear;*/
-    /*animation: spin 1s infinite linear;*/
+.cssload-whirlpool::after {
+    /*content: "";*/
+    /*margin: -170px 0 0 -170px;*/
+    /*height: 329px;*/
+    /*width: 329px;*/
+    content: "";
+    margin: -160px 0 0 -160px;
+    height: 306px;
+    width: 306px;
 }
 
-.jp-state-seeking .round1:after {
-    -webkit-animation: spin 1s infinite linear;
-    animation: spin 1s infinite linear;
+.jp-state-seeking .cssload-whirlpool::after {
+    /*content: "";*/
+    /*margin: -170px 0 0 -170px;*/
+    /*height: 329px;*/
+    /*width: 329px;*/
+    animation: cssload-rotate 2300ms linear infinite;
+    -o-animation: cssload-rotate 2300ms linear infinite;
+    -ms-animation: cssload-rotate 2300ms linear infinite;
+    -webkit-animation: cssload-rotate 2300ms linear infinite;
+    -moz-animation: cssload-rotate 2300ms linear infinite;
 }
 
-@-webkit-keyframes spin {
-    from {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
+
+
+@keyframes cssload-rotate {
+    100% {
         transform: rotate(360deg);
     }
 }
 
-@keyframes spin {
-    from {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
+@-o-keyframes cssload-rotate {
+    100% {
+        -o-transform: rotate(360deg);
     }
 }
+
+@-ms-keyframes cssload-rotate {
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes cssload-rotate {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
 
 
 
@@ -572,8 +731,3 @@ img.play_img {
 }
 
 
-/*img.play {*/
-    /*height: 40px;*/
-    /*color: #00a8e6;*/
-    /*background: none;*/
-/*}*/
