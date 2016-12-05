@@ -1,11 +1,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Радио Julian</title>
-<link rel="stylesheet" href="/css/uikit.almost-flat.min.css"/>
-<link rel="stylesheet" href="/css/main.css"/>
+
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/uikit.almost-flat.min.css"/>
+
+<link rel="stylesheet" href="/css/normalize.css" type="text/css"> 
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="/css/examples.css" type="text/css">
+
+<link rel="stylesheet" href="/css/main.css"/>
+
+
 <script src="/js/jquery-3.1.0.min.js"></script>
 <script src="/js/uikit.min.js"></script>
+
+<script type="text/javascript" src="/js/lib/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="/scrollmagic/uncompressed/ScrollMagic.js"></script>
+<script type="text/javascript" src="/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+
+<!--<script type="text/javascript" src="scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>-->
+
 <script>
     $(document).ready(function () {
         /*
@@ -90,6 +107,13 @@
     });
     //]]>
 </script>
+
+
+<!--<script type="text/javascript" src="js/lib/jquery.min.js"></script>-->
+
+
+
+
 <!--    <script src="/js/jquery-ui/jquery-ui.min.js"></script>-->
 <!--    <script>-->
 <!--        $(function () {-->

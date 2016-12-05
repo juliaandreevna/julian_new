@@ -9,20 +9,23 @@ html, body {
     display: block;
     width: 100%;
     height: 100%;
-    background: url(/img/jul.png) 100% 50% no-repeat;
+/*
+    background: url (/img/jul.png) 100% 50% no-repeat;
     background-size: contain;
+*/
 }
 
 /*СОЦ.СЕТИ*/
 
 .socials-sb {
-    position: absolute;
+    position: fixed;
     right: 0;
     width: 46px;
     height: 100%;
     top: 0;
     bottom: 0;
     background: #FFF;
+    z-index: 900;
 }
 
 .socials-sb ul {
@@ -112,13 +115,14 @@ html, body {
 /*МЕНЮ*/
 
 .menu-sb {
-    position: absolute;
+    position: fixed;
     left: 0;
     width: 115px;
     height: 100%;
     top: 0;
     bottom: 0;
     background: none;
+    z-index: 900;
 }
 
 .menu-sb ul {
@@ -187,10 +191,20 @@ html, body {
     height: 64px;
 }
 
+
+
+/*СТРАНИЦА JULIAN RADIO*/
+
+
+#julianradio_page {
+    background: url(/img/jul.png) 100% 50% no-repeat;
+    background-size: contain;
+}
+
 /*ОСНОВНАЯ ИНФ.*/
 
 .section {
-    padding-top: 75px;
+    padding-top: 70px;
 }
 
 /*НОВОСТИ ЮЛИАН*/
@@ -711,6 +725,7 @@ img.play_img {
 
 .conc_org {
     margin-top: 20px;
+/*    position: fixed;*/
 }
 
 .conc_org a {
