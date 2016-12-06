@@ -15,6 +15,55 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
     
 </head>
 <body>
+
+<!--<div id="fb-root"></div>-->
+<!--<script>(function(d, s, id) {-->
+<!--        var js, fjs = d.getElementsByTagName(s)[0];-->
+<!--        if (d.getElementById(id)) return;-->
+<!--        js = d.createElement(s); js.id = id;-->
+<!--        js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";-->
+<!--        fjs.parentNode.insertBefore(js, fjs);-->
+<!--    }(document, 'script', 'facebook-jssdk'));</script>-->
+
+<div class="pl_bg"></div>
+<div class="pl">
+    <svg class="site_preloader" viewBox="0 0 800 600">
+        <symbol id="s-text">
+            <text text-anchor="middle"
+                  x="50%"
+                  y="45%"
+                  class="text--line"
+            >
+                Julian
+            </text>
+            <text text-anchor="middle"
+                  x="50%"
+                  y="55%"
+                  class="text--line2"
+            >
+                Radio
+            </text>
+
+        </symbol>
+
+        <g class="g-ants">
+            <use xlink:href="#s-text"
+                 class="text-copy"></use>
+            <use xlink:href="#s-text"
+                 class="text-copy"></use>
+            <use xlink:href="#s-text"
+                 class="text-copy"></use>
+<!--            <use xlink:href="#s-text"-->
+<!--                 class="text-copy"></use>-->
+<!--            <use xlink:href="#s-text"-->
+<!--                 class="text-copy"></use>-->
+        </g>
+
+
+    </svg>
+</div>
+
+
 <div class="main">
     <div class="socials-sb">
         <ul>
@@ -65,23 +114,28 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                 </a></li>
         </ul>
     </div>
-    
+
     <div id="content-wrapper">
 		<div id="example-wrapper">
 			<div class="scrollContent">
-				
+
 				<section class="demo" id="section-wipes">
 					<style type="text/css">
 						.panel {
 							height: 100%;
-							width: 100%;        
+							width: 100%;
 						}
-						.panel.blue,
-                        .panel.turqoise,
-                        .panel.green,
-                        .panel.bordeaux{
-							margin-bottom: 200px;                            
-						}
+
+                        .panel_marg {
+                            margin-bottom: 200px;
+                        }
+
+						/*.panel.blue,*/
+                        /*.panel.turqoise,*/
+                        /*.panel.green,*/
+                        /*.panel.bordeaux{*/
+							/*margin-bottom: 200px;*/
+						/*}*/
                         #pinContainer {
 							width: 100%;
 							height: 100%;
@@ -98,8 +152,8 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
 							width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
 							float: left;
 						}
-                        
-                        
+
+
 					</style>
 
 <!--
@@ -209,31 +263,51 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                         </div>
 
 					</section>
-					<section class="panel turqoise" id="news_page">
-						<b>Новости</b>
-					</section>
+					<section class="panel panel_marg" id="news_page">
+                        <div class="news_page_cont">
+                            <div class="uk-container uk-container-center uk-text-center section">
+                                <h3 class="uk-text-center h3_section">Новости</h3>
+                                <div class="uk-panel uk-panel-box my_panel news_panel">
+                                    <ul class="uk-grid uk-grid-collapse uk-grid-width-small-1-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-2">
+                                        <li>
+                                            <div class="greatest_news ">
+                                                
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="fb_news">
+                                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=400&height=470&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="400" height="470" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                                            </div>
+                                        </li>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
 
 					<div id="pinContainer">
 						<div id="slideContainer">
-							<section class="panel_slide blue" id="audio_page">
+							<section class="panel_slide blue panel_marg" id="audio_page">
 								<b>Аудио</b>
 							</section>
-							<section class="panel_slide green" id="video_page">
+							<section class="panel_slide green panel_marg" id="video_page">
 								<b>Видео</b>
 							</section>
-							<section class="panel_slide bordeaux" id="photo_page">
+							<section class="panel_slide bordeaux panel_marg" id="photo_page">
 								<b>Фото</b>
 							</section>
-							<section class="panel_slide blue" id="biography_page">
+							<section class="panel_slide blue panel_marg" id="biography_page">
 								<b>Биография Юлиана</b>
 							</section>
 						</div>
 					</div>
 
-					<section class="panel turqoise"  id="forum_page">
+					<section class="panel turqoise panel_marg"  id="forum_page">
 						<b>Форум</b>
 					</section>
-					<section class="panel green"  id="contact_page">
+					<section class="panel green panel_marg"  id="contact_page">
 						<b>Контакты</b>
 					</section>
 
@@ -242,9 +316,9 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
 
 					<script>
 						$(function () { // wait for document ready
-                            
+
                             // FOR SECTION VERTICAL
-                                                        
+
 							// init
 							var controller = new ScrollMagic.Controller({
 								globalSceneOptions: {
@@ -264,9 +338,9 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
 //									.addIndicators() // add indicators (requires plugin)
 									.addTo(controller);
 							}
-                            
+
                             // FOR SLIDES HORIZONTAL
-                            
+
                             // define movement of panels
 							var wipeAnimation = new TimelineMax()
 								// animate to second panel
@@ -333,9 +407,21 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
 			</div>
 		</div>
 	</div>
-    
-    
-       
+
+
+
 </div>
+
+<script>
+    $(document).ready(function() {
+
+//        setTimeout(function(){
+//            $('body').addClass('loaded')
+//        }, 3000);
+
+        $('body').addClass('loaded');
+    })
+</script>
+
 </body>
 </html>

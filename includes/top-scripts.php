@@ -5,6 +5,8 @@
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 
+<link rel="stylesheet" href="/JRcolored_anim.css">
+
 <link rel="stylesheet" href="/css/uikit.almost-flat.min.css"/>
 
 <link rel="stylesheet" href="/css/normalize.css" type="text/css"> 
