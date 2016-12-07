@@ -3,6 +3,7 @@ html, body {
     background-size: cover;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 .main {
@@ -205,9 +206,8 @@ html, body {
 
 .section {
     /*padding-top: 70px;*/
-    padding: 70px 150px 0 150px;
-    /*margin: 0;*/
-
+    padding: 70px 0 0 0;
+    margin: 0 auto;
 }
 
 /*НОВОСТИ ЮЛИАН*/
@@ -216,7 +216,7 @@ ul.notices {
     position: relative;
     opacity: 0.8;
     margin: 0 auto;
-    padding: 0;
+    /*padding: 0;*/
     list-style: none;
     max-width: 600px;
     white-space: nowrap;
@@ -753,6 +753,27 @@ img.play_img {
 /*ОБЩИЕ ДЛЯ СТРАНИЦ*/
 /*------------------*/
 
+.cont {
+    height: 100%
+}
+
+.my_panel {
+box-shadow: 0px 3px 5px 0.00px rgba(0, 0, 0, 0.24);
+background-color: #eeeeee;
+padding: 0;
+}
+
+.h3_section {
+    /*line-height: normal;*/
+    text-transform: uppercase;
+    /*padding: 0;*/
+    color: #212121;
+    font-size: 27px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 37px;
+}
 
 
 /*------------------*/
@@ -848,33 +869,23 @@ img.play_img {
     /*height: 100%;*/
 /*}*/
 
-.news_page_cont {
-    background: #e6e6e6;
-    height: 100%;
-}
 
-.my_panel {
-box-shadow: 0px 3px 5px 0.00px rgba(0, 0, 0, 0.24);
-background-color: #eeeeee;
-padding: 0;
+
+.news_page_cont {
+     background: #e6e6e6;
+ }
+
+.news_page {
+    background: #e6e6e6;
 }
 
 .news_panel {
     /*height: 470px;*/
     background: #FFFFFF;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
-
-.h3_section {
-    line-height: normal;
-    text-transform: uppercase;
-    /*padding: 0;*/
-    color: #212121;
-    font-size: 27px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 .greatest_news{
     background: url(/img/julian25.jpg) center no-repeat;
@@ -882,5 +893,78 @@ padding: 0;
     content: '';
     /*width: 100%;*/
     /*height: 100%;*/
-    height: 470px;
+    height: 450px;
 }
+
+/*-------------------*/
+/*СТРАНИЦА АУДИО*/
+/*-------------------*/
+
+.audio_panel {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.audio_page_cont {
+    background: #cdd1d2;
+}
+
+.audio_page {
+    background: #cdd1d2;
+}
+
+
+/*ЭФФЕКТ ДЛЯ ГРИДА АЛЬБОМОВ*/
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+.mt {
+    margin-top: 30px;
+}
+
+.effect-apollo, .effect-apollo h2  {
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.effect-apollo p  {
+    font-weight: 400;
+}
+
+.effect-apollo p span {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.effect-apollo{
+    box-shadow: 0px 3px 3px 0.00px rgba(0, 0, 0, 0.24);
+}
+
+/*-------------------*/
+/*СТРАНИЦА ВИДЕО*/
+/*-------------------*/
+
+
+
+/*-------------------*/
+/*СТРАНИЦА ФОТО*/
+/*-------------------*/
+
+
+
+/*-------------------*/
+/*СТРАНИЦА БИОГРАФИЯ*/
+/*-------------------*/
+
+
+
+/*-------------------*/
+/*СТРАНИЦА ФОРУМ*/
+/*-------------------*/
+
+
+
+/*-------------------*/
+/*СТРАНИЦА КОНТАКТЫ*/
+/*-------------------*/

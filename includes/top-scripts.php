@@ -4,6 +4,7 @@
 <title>Радио Julian</title>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,500,600' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" href="/JRcolored_anim.css">
 
@@ -12,6 +13,9 @@
 <link rel="stylesheet" href="/css/normalize.css" type="text/css"> 
 <link rel="stylesheet" href="/css/style.css" type="text/css">
 <link rel="stylesheet" href="/css/examples.css" type="text/css">
+
+<link rel="stylesheet" href="/css/hover.css">
+<link rel="stylesheet" type="text/css" href="/fonts_hov/font-awesome-4.2.0/css/font-awesome.min.css" />
 
 <link rel="stylesheet" href="/css/main.css"/>
 

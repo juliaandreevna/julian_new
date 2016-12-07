@@ -264,7 +264,7 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
 
 					</section>
 					<section class="panel panel_marg" id="news_page">
-                        <div class="news_page_cont">
+                        <div class="cont news_page_cont">
                             <div class="uk-container uk-container-center uk-text-center section">
                                 <h3 class="uk-text-center h3_section">Новости</h3>
                                 <div class="uk-panel uk-panel-box my_panel news_panel">
@@ -277,9 +277,10 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
 
                                         <li>
                                             <div class="fb_news">
-                                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=400&height=470&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="400" height="470" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=400&height=470&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="400" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                                             </div>
                                         </li>
+                                    </ul>    
 
                                 </div>
                             </div>
@@ -289,26 +290,160 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
 
 					<div id="pinContainer">
 						<div id="slideContainer">
-							<section class="panel_slide blue panel_marg" id="audio_page">
-								<b>Аудио</b>
+							<section class="panel_slide panel_marg" id="audio_page">
+                                    <div class="cont audio_page_cont">
+                                        <div class="uk-container uk-container-center uk-text-center section">
+                                            <h3 class="uk-text-center h3_section">Аудио</h3>
+                                            <div class="audio_panel">
+
+                                                <ul class="uk-grid uk-grid-small uk-grid-width-small-1-2 uk-grid-width-medium-1-4 uk-grid-width-large-1-4" data-uk-grid-margin="{cls:'mt'}"  >
+                                                   <li>
+                                                       <div class="album_panel grid">
+                                                           <figure class="effect-apollo">
+                                                               <img src="/img/albums/08-meri.jpg" alt=""/>
+                                                               <figcaption>
+                                                                   <p>Мэрилин<br><span>2016</span></p>
+                                                                   <a href="#"></a>
+                                                               </figcaption>
+                                                           </figure>
+                                                        </div>
+                                                   </li>
+                                                   <li>
+                                                       <div class="album_panel grid">
+                                                           <figure class="effect-apollo">
+                                                               <img src="/img/albums/07-yata.jpg" alt=""/>
+                                                               <figcaption>
+                                                                   <p>Я так сильно тебя люблю<br><span>2010</span></p>
+                                                                   <a href="#"></a>
+                                                               </figcaption>
+                                                           </figure>
+                                                       </div>
+                                                   </li>
+                                                   <li>
+                                                       <div class="album_panel grid">
+                                                           <figure class="effect-apollo">
+                                                               <img src="/img/albums/01-prob.jpg" alt=""/>
+                                                               <figcaption>
+                                                                   <p>Пробуждение<br><span>2003</span></p>
+                                                                   <a href="#"></a>
+                                                               </figcaption>
+                                                           </figure>
+                                                       </div>
+                                                   </li>
+                                                   <li>
+                                                       <div class="album_panel grid">
+                                                           <figure class="effect-apollo">
+                                                               <img src="/img/albums/02-yana.jpg" alt=""/>
+                                                               <figcaption>
+                                                                   <p>Я на арбате продаю дожди<br><span>2002</span></p>
+                                                                   <a href="#"></a>
+                                                               </figcaption>
+                                                           </figure>
+                                                       </div>
+                                                   </li>
+                                                   <li>
+                                                       <div class="album_panel grid">
+                                                           <figure class="effect-apollo">
+                                                               <img src="/img/albums/03-neve.jpg" alt=""/>
+                                                               <figcaption>
+                                                                   <p>Не верю в королей<br><span>1999</span></p>
+                                                                   <a href="#"></a>
+                                                               </figcaption>
+                                                           </figure>
+                                                       </div>
+                                                   </li>
+                                                   <li>
+                                                       <div class="album_panel grid">
+                                                           <figure class="effect-apollo">
+                                                               <img src="/img/albums/04-tyta.jpg" alt=""/>
+                                                               <figcaption>
+                                                                   <p>Ты танцуешь, я пою<br><span>1996</span></p>
+                                                                   <a href="#"></a>
+                                                               </figcaption>
+                                                           </figure>
+                                                       </div>
+                                                   </li>
+                                                   <li>
+                                                       <div class="album_panel grid">
+                                                           <figure class="effect-apollo">
+                                                               <img src="/img/albums/05-lubi.jpg" alt=""/>
+                                                               <figcaption>
+                                                                   <p>Люби меня<br><span>1995</span></p>
+                                                                   <a href="#"></a>
+                                                               </figcaption>
+                                                           </figure>
+                                                       </div>
+                                                   </li>
+                                                   <li>
+                                                       <div class="album_panel grid">
+                                                           <figure class="effect-apollo">
+                                                               <img src="/img/albums/06-denj.jpg" alt=""/>
+                                                               <figcaption>
+                                                                   <p>День рождения<br><span>1994</span></p>
+                                                                   <a href="#"></a>
+                                                               </figcaption>
+                                                           </figure>
+                                                       </div>
+                                                   </li>
+
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
 							</section>
 							<section class="panel_slide green panel_marg" id="video_page">
-								<b>Видео</b>
+								<div class="cont video_page_cont">
+                                    <div class="uk-container uk-container-center uk-text-center section">
+                                        <h3 class="uk-text-center h3_section">Видео</h3>
+                                        <div class="video_panel">
+
+                                        </div>
+                                    </div>
+                                </div>
 							</section>
 							<section class="panel_slide bordeaux panel_marg" id="photo_page">
-								<b>Фото</b>
+                                <div class="cont photo_page_cont">
+                                    <div class="uk-container uk-container-center uk-text-center section">
+                                        <h3 class="uk-text-center h3_section">Фото</h3>
+                                        <div class="photo_panel">
+
+                                        </div>
+                                    </div>
+                                </div>
 							</section>
 							<section class="panel_slide blue panel_marg" id="biography_page">
-								<b>Биография Юлиана</b>
+								<div class="cont biography_page_cont">
+                                    <div class="uk-container uk-container-center uk-text-center section">
+                                        <h3 class="uk-text-center h3_section">Биография Юлиана</h3>
+                                        <div class="biography_panel">
+
+                                        </div>
+                                    </div>
+                                </div>
 							</section>
 						</div>
 					</div>
 
 					<section class="panel turqoise panel_marg"  id="forum_page">
-						<b>Форум</b>
+						<div class="cont forum_page_cont">
+                            <div class="uk-container uk-container-center uk-text-center section">
+                                <h3 class="uk-text-center h3_section">Форум</h3>
+                                <div class="forum_panel">
+
+                                </div>
+                            </div>
+                        </div>
 					</section>
 					<section class="panel green panel_marg"  id="contact_page">
-						<b>Контакты</b>
+						<div class="cont contact_page_cont">
+                            <div class="uk-container uk-container-center uk-text-center section">
+                                <h3 class="uk-text-center h3_section">Контакты</h3>
+                                <div class="contact_panel">
+
+                                </div>
+                            </div>
+                        </div>
 					</section>
 
 					<!-- anchor_link_scrolling -->
