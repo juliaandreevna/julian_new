@@ -3,7 +3,7 @@
 	clear: both;
 	margin: 0 auto;
 	padding: 1em 0 4em;
-	max-width: 170px;
+	/*max-width: 170px;*/
 	list-style: none;
 	text-align: center;
 }
@@ -15,11 +15,11 @@
 	overflow: hidden;
 	/*margin: 17px 2%;*/
 	margin: 0;
-	min-width: 170px;
-	max-width: 480px;
-	max-height: 360px;
+	/*min-width: 170px;*/
+	max-width: 170px;
+	/*max-height: 360px;*/
 	/*width: 15%;*/
-	width: 100%;
+	/*width: 100%;*/
 	height: auto;
 	background: #3085a3;
 	text-align: center;

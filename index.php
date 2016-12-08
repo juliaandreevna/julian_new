@@ -7,6 +7,7 @@ $page_title = "Главная";
 $page_suffix = "Julian Radio - ";
 require_once($home_dir . "/includes/ya-news.php");
 $notices = collection("Анонсы")->find(["public" => true])->toArray();
+$videos = collection("Видеогалерея")->find(["public" => true])->toArray();
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
@@ -395,7 +396,7 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
 								<div class="cont video_page_cont">
                                     <div class="uk-container uk-container-center uk-text-center section">
                                         <h3 class="uk-text-center h3_section">Видео</h3>
-                                        <div class="video_panel uk-clearfix" data-uk-slideset="{animation: 'scale', default:18}">
+                                        <div class="video_panel uk-clearfix" data-uk-slideset="{animation: 'scale', default:6}">
                                             <!-- Filter Controls -->
                                             <ul id="video-filter" class="uk-subnav uk-subnav-pill">
                                                 <li data-uk-filter=""><a href="">Все</a></li>
@@ -407,44 +408,210 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                                             </ul>
                                             <div class="uk-slidenav-position uk-float-left video_slidenav">
                                                 <!-- Dynamic Grid -->
-                                                <ul class="uk-slideset uk-grid uk-grid-small uk-grid-width-1-6 "  data-uk-grid-margin="{cls:'mtr'}">
-                                                    <li data-uk-filter="filter-va">
-                                                        <figure class="uk-panel uk-overlay uk-overlay-hover">
-                                                            <a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}">
-                                                                <img src="/img/albums/04-tyta.jpg" alt="">
-                                                                <figcaption class="uk-overlay-panel uk-overlay-background">
-                                                                    <h3>Обложка</h3>
-                                                                    <p>Ты танцуешь, я пою</p>
-                                                                </figcaption>
-                                                            </a>
-                                                        </figure>
-                                                    </li>
-                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-vb,filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-vb,filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-vb,filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
-                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                <ul class="uk-slideset uk-grid uk-grid-small uk-grid-width-1-3 "  data-uk-grid-margin="{cls:'mtr'}">
+
+                                                    <?php
+                                                    foreach($videos as $video){
+                                                        $pieces = explode("/", $video["video"]);
+                                                        ?>
+                                                        <li>
+                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
+                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
+                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
+                                                                        <h3><?php echo $video["name"]; ?></h3>
+                                                                        <p><?php echo $video["text"]; ?></p>
+                                                                    </figcaption>
+                                                                </a>
+                                                            </figure>
+<!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
+<!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
+<!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
+<!--                                                            </a>-->
+                                                        </li>
+                                                    <?php }; ?>
+
+                                                    <?php
+                                                    foreach($videos as $video){
+                                                        $pieces = explode("/", $video["video"]);
+                                                        ?>
+                                                        <li>
+                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
+                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
+                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
+                                                                        <h3><?php echo $video["name"]; ?></h3>
+                                                                        <p><?php echo $video["text"]; ?></p>
+                                                                    </figcaption>
+                                                                </a>
+                                                            </figure>
+                                                            <!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
+                                                            <!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
+                                                            <!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
+                                                            <!--                                                            </a>-->
+                                                        </li>
+                                                    <?php }; ?>
+                                                    <?php
+                                                    foreach($videos as $video){
+                                                        $pieces = explode("/", $video["video"]);
+                                                        ?>
+                                                        <li>
+                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
+                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
+                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
+                                                                        <h3><?php echo $video["name"]; ?></h3>
+                                                                        <p><?php echo $video["text"]; ?></p>
+                                                                    </figcaption>
+                                                                </a>
+                                                            </figure>
+                                                            <!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
+                                                            <!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
+                                                            <!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
+                                                            <!--                                                            </a>-->
+                                                        </li>
+                                                    <?php }; ?>
+                                                    <?php
+                                                    foreach($videos as $video){
+                                                        $pieces = explode("/", $video["video"]);
+                                                        ?>
+                                                        <li>
+                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
+                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
+                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
+                                                                        <h3><?php echo $video["name"]; ?></h3>
+                                                                        <p><?php echo $video["text"]; ?></p>
+                                                                    </figcaption>
+                                                                </a>
+                                                            </figure>
+                                                            <!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
+                                                            <!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
+                                                            <!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
+                                                            <!--                                                            </a>-->
+                                                        </li>
+                                                    <?php }; ?>
+                                                    <?php
+                                                    foreach($videos as $video){
+                                                        $pieces = explode("/", $video["video"]);
+                                                        ?>
+                                                        <li>
+                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
+                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
+                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
+                                                                        <h3><?php echo $video["name"]; ?></h3>
+                                                                        <p><?php echo $video["text"]; ?></p>
+                                                                    </figcaption>
+                                                                </a>
+                                                            </figure>
+                                                            <!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
+                                                            <!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
+                                                            <!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
+                                                            <!--                                                            </a>-->
+                                                        </li>
+                                                    <?php }; ?>
+                                                    <?php
+                                                    foreach($videos as $video){
+                                                        $pieces = explode("/", $video["video"]);
+                                                        ?>
+                                                        <li>
+                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
+                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
+                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
+                                                                        <h3><?php echo $video["name"]; ?></h3>
+                                                                        <p><?php echo $video["text"]; ?></p>
+                                                                    </figcaption>
+                                                                </a>
+                                                            </figure>
+                                                            <!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
+                                                            <!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
+                                                            <!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
+                                                            <!--                                                            </a>-->
+                                                        </li>
+                                                    <?php }; ?>
+                                                    <?php
+                                                    foreach($videos as $video){
+                                                        $pieces = explode("/", $video["video"]);
+                                                        ?>
+                                                        <li>
+                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
+                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
+                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
+                                                                        <h3><?php echo $video["name"]; ?></h3>
+                                                                        <p><?php echo $video["text"]; ?></p>
+                                                                    </figcaption>
+                                                                </a>
+                                                            </figure>
+                                                            <!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
+                                                            <!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
+                                                            <!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
+                                                            <!--                                                            </a>-->
+                                                        </li>
+                                                    <?php }; ?>
+                                                    <?php
+                                                    foreach($videos as $video){
+                                                        $pieces = explode("/", $video["video"]);
+                                                        ?>
+                                                        <li>
+                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
+                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
+                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
+                                                                        <h3><?php echo $video["name"]; ?></h3>
+                                                                        <p><?php echo $video["text"]; ?></p>
+                                                                    </figcaption>
+                                                                </a>
+                                                            </figure>
+                                                            <!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
+                                                            <!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
+                                                            <!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
+                                                            <!--                                                            </a>-->
+                                                        </li>
+                                                    <?php }; ?>
+
+
+
+<!--                                                    <li data-uk-filter="filter-va">-->
+<!--                                                        <figure class="uk-panel uk-overlay uk-overlay-hover">-->
+<!--                                                            <a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}">-->
+<!--                                                                <img src="/img/albums/04-tyta.jpg" alt="">-->
+<!--                                                                <figcaption class="uk-overlay-panel uk-overlay-background">-->
+<!--                                                                    <h3>Обложка</h3>-->
+<!--                                                                    <p>Ты танцуешь, я пою</p>-->
+<!--                                                                </figcaption>-->
+<!--                                                            </a>-->
+<!--                                                        </figure>-->
+<!--                                                    </li>-->
+<!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb,filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb,filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb,filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                -->
                                                 </ul>
                                                 <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
                                                 <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
