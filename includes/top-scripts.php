@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="/JRcolored_anim.css">
 
 <link rel="stylesheet" href="/css/uikit.almost-flat.min.css"/>
+<link rel="stylesheet" href="/css/components/slidenav.almost-flat.min.css"/>
+<link rel="stylesheet" href="/css/components/dotnav.almost-flat.min.css"/>
+
 
 <link rel="stylesheet" href="/css/normalize.css" type="text/css"> 
 <link rel="stylesheet" href="/css/style.css" type="text/css">
@@ -22,6 +25,11 @@
 
 <script src="/js/jquery-3.1.0.min.js"></script>
 <script src="/js/uikit.min.js"></script>
+<!--<script src="/js/components/grid.min.js"></script>-->
+<script src="/js/components/grid-parallax.min.js"></script>
+<script src="/js/components/lightbox.min.js"></script>
+<script src="/js/components/slideset.min.js"></script>
+
 
 <script type="text/javascript" src="/js/lib/greensock/TweenMax.min.js"></script>
 <script type="text/javascript" src="/scrollmagic/uncompressed/ScrollMagic.js"></script>

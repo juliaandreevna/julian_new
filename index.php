@@ -173,7 +173,7 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
 					</form>
 -->
 
-					<section class="panel" id="julianradio_page">
+					<section class="panel " id="julianradio_page">
 <!--					<b>Julian Radio</b>-->
                         <div class="uk-container uk-container-center uk-text-center section">
                             <div class="julian_news">
@@ -263,7 +263,7 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                         </div>
 
 					</section>
-					<section class="panel panel_marg" id="news_page">
+					<section class="panel bgimage panel_marg" id="news_page">
                         <div class="cont news_page_cont">
                             <div class="uk-container uk-container-center uk-text-center section">
                                 <h3 class="uk-text-center h3_section">Новости</h3>
@@ -285,18 +285,17 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                                 </div>
                             </div>
                         </div>
-
                     </section>
 
-					<div id="pinContainer">
+                    <div id="pinContainer">
 						<div id="slideContainer">
-							<section class="panel_slide panel_marg" id="audio_page">
+							<section class="panel_slide bgimage panel_marg" id="audio_page">
                                     <div class="cont audio_page_cont">
                                         <div class="uk-container uk-container-center uk-text-center section">
                                             <h3 class="uk-text-center h3_section">Аудио</h3>
                                             <div class="audio_panel">
 
-                                                <ul class="uk-grid uk-grid-small uk-grid-width-small-1-2 uk-grid-width-medium-1-4 uk-grid-width-large-1-4" data-uk-grid-margin="{cls:'mt'}"  >
+                                                <ul class="uk-grid uk-grid-small uk-grid-width-small-1-2 uk-grid-width-medium-1-4 uk-grid-width-large-1-4" data-uk-grid-margin="{cls:'mt'}" data-uk-grid-parallax="{translate:100}" >
                                                    <li>
                                                        <div class="album_panel grid">
                                                            <figure class="effect-apollo">
@@ -392,7 +391,7 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                                         </div>
                                     </div>
 							</section>
-							<section class="panel_slide green panel_marg" id="video_page">
+							<section class="panel_slide bgimage panel_marg" id="video_page">
 								<div class="cont video_page_cont">
                                     <div class="uk-container uk-container-center uk-text-center section">
                                         <h3 class="uk-text-center h3_section">Видео</h3>
@@ -402,17 +401,106 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                                     </div>
                                 </div>
 							</section>
-							<section class="panel_slide bordeaux panel_marg" id="photo_page">
+							<section class="panel_slide bgimage panel_marg" id="photo_page">
                                 <div class="cont photo_page_cont">
                                     <div class="uk-container uk-container-center uk-text-center section">
                                         <h3 class="uk-text-center h3_section">Фото</h3>
-                                        <div class="photo_panel">
+<!--                                        <div class="photo_panel ">-->
+<!---->
+<!--                                            <!-- Filter Controls -->
+<!--                                            <ul id="photo-filter" class="uk-subnav">-->
+<!--                                                <li data-uk-filter=""><a href="">Все</a></li>-->
+<!--                                                <li data-uk-filter="filter-a">Фотосессии<a href=""></a></li>-->
+<!--                                                <li data-uk-filter="filter-b">Концерты<a href=""></a></li>-->
+<!--                                                <li data-uk-filter="filter-с">Личное<a href=""></a></li>-->
+<!--                                            </ul>-->
+<!--                                            -->
+<!--                                            -->
+<!--                                            <!-- Dynamic Grid -->
+<!--                                            <div class="uk-grid-width-small-1-2 uk-grid-width-medium-1-5 uk-grid-width-large-1-6 " data-uk-grid="{controls: '#photo-filter'}">-->
+<!--                                                <div data-uk-filter="filter-a"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/18.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/18.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-a"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/22.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/22.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-a,filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/jul.png" data-uk-lightbox="{group:'my-group'}"><img src="/img/jul.png" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/22.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/22.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-a,filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/julian25.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/julian25.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/22.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/22.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-b,filter-c"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/julian25.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/julian25.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/22.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/22.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-a,filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/julian25.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/julian25.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!---->
+<!--                                                <div data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/22.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/22.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-b,filter-c"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/julian25.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/julian25.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/22.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/22.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-a,filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/julian25.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/julian25.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/22.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/22.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-b,filter-c"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/julian25.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/julian25.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/22.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/22.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-a,filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/julian25.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/julian25.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/22.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/22.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!--                                                <div data-uk-filter="filter-b,filter-c"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/julian25.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/julian25.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></div>-->
+<!---->
+<!--                                            </div>-->
+<!--                                        </div>-->
 
+
+
+                                        <div class="photo_panel uk-clearfix" data-uk-slideset="{animation: 'scale', default:18}">
+
+
+                                            <!-- Filter Controls -->
+                                            <ul id="photo-filter" class="uk-subnav uk-subnav-pill">
+                                                <li data-uk-filter=""><a href="">Все</a></li>
+                                                <li data-uk-filter="filter-a"><a href="">Фотосессии</a></li>
+                                                <li data-uk-filter="filter-b"><a href="">Концерты</a></li>
+                                                <li data-uk-filter="filter-c"><a href="">Личное</a></li>
+                                            </ul>
+
+<!--                                            <ul class="uk-slideset-nav uk-dotnav uk-flex-column uk-float-right"></ul>-->
+
+                                            <div class="uk-slidenav-position uk-float-left photo_slidenav">
+
+                                                <!-- Dynamic Grid -->
+                                                <ul class="uk-slideset uk-grid uk-grid-small uk-grid-width-1-6 "  data-uk-grid-margin="{cls:'mtr'}">
+                                                    <li data-uk-filter="filter-a"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-a"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-a,filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-a,filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-b,filter-c"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-a,filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-a"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-a"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-a,filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-a,filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-b,filter-c"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-a,filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-a"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-a"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-a,filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-a,filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-b,filter-c"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-c"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+                                                    <li data-uk-filter="filter-a,filter-b"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>
+
+                                                </ul>
+                                                <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
+                                                <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
+                                            </div>
+
+                                            <ul class="uk-slideset-nav uk-dotnav uk-flex-column uk-float-right"></ul>
+
+<!--                                           <ul class="uk-slideset-nav uk-dotnav uk-flex-center"></ul>-->
                                         </div>
-                                    </div>
                                 </div>
 							</section>
-							<section class="panel_slide blue panel_marg" id="biography_page">
+							<section class="panel_slide bgimage panel_marg" id="biography_page">
 								<div class="cont biography_page_cont">
                                     <div class="uk-container uk-container-center uk-text-center section">
                                         <h3 class="uk-text-center h3_section">Биография Юлиана</h3>
@@ -425,7 +513,7 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
 						</div>
 					</div>
 
-					<section class="panel turqoise panel_marg"  id="forum_page">
+					<section class="panel bgimage panel_marg"  id="forum_page">
 						<div class="cont forum_page_cont">
                             <div class="uk-container uk-container-center uk-text-center section">
                                 <h3 class="uk-text-center h3_section">Форум</h3>
@@ -435,7 +523,7 @@ $notices = collection("Анонсы")->find(["public" => true])->toArray();
                             </div>
                         </div>
 					</section>
-					<section class="panel green panel_marg"  id="contact_page">
+					<section class="panel bgimage panel_marg"  id="contact_page">
 						<div class="cont contact_page_cont">
                             <div class="uk-container uk-container-center uk-text-center section">
                                 <h3 class="uk-text-center h3_section">Контакты</h3>

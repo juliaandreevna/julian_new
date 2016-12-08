@@ -775,6 +775,11 @@ padding: 0;
     line-height: 37px;
 }
 
+.bgimage {
+    background: #EEE url(/img/bg1.jpg) no-repeat;
+    background-size: cover;
+}
+
 
 /*------------------*/
 /*СТРАНИЦА НОВОСТИ*/
@@ -871,13 +876,13 @@ padding: 0;
 
 
 
-.news_page_cont {
-     background: #e6e6e6;
- }
+/*.news_page_cont {*/
+     /*background: #e6e6e6;*/
+ /*}*/
 
-.news_page {
-    background: #e6e6e6;
-}
+/*.news_page {*/
+    /*background: #e6e6e6;*/
+/*}*/
 
 .news_panel {
     /*height: 470px;*/
@@ -905,13 +910,13 @@ padding: 0;
     margin: 0 auto;
     margin-top: 30px;
 }
-.audio_page_cont {
-    background: #cdd1d2;
-}
+/*.audio_page_cont {*/
+    /*background: #cdd1d2;*/
+/*}*/
 
-.audio_page {
-    background: #cdd1d2;
-}
+/*.audio_page {*/
+    /*background: #cdd1d2;*/
+/*}*/
 
 
 /*ЭФФЕКТ ДЛЯ ГРИДА АЛЬБОМОВ*/
@@ -921,7 +926,7 @@ padding: 0;
 .clearfix:after { clear: both; }
 
 .mt {
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .effect-apollo, .effect-apollo h2  {
@@ -951,7 +956,24 @@ padding: 0;
 /*СТРАНИЦА ФОТО*/
 /*-------------------*/
 
+.photo_panel {
+    max-width: 950px;
+    margin: 0 auto;
+}
 
+#photo-filter li {
+    cursor: pointer;
+}
+
+.photo_slidenav {
+    min-height: 445px;
+    max-width: 900px;
+}
+
+.mtr {
+    margin-top: 10px;
+    /*margin-right: 10px;*/
+}
 
 /*-------------------*/
 /*СТРАНИЦА БИОГРАФИЯ*/
