@@ -970,12 +970,12 @@ padding: 0;
 }
 
 .video_slidenav figcaption {
-    /*text-align: left;*/
+    text-align: right;
 }
 
 .video_slidenav figcaption h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: normal;
 }
@@ -988,6 +988,16 @@ padding: 0;
 .video_slidenav .uk-grid-width-1-3 li{
     width: 33.333%;
 }
+
+/*--------*/
+
+#video-filter a, #photo-filter a {
+    text-transform: uppercase;
+    font-size: 16px;
+    /*font-weight: 500;*/
+}
+
+
 
 /*-------------------*/
 /*СТРАНИЦА ФОТО*/

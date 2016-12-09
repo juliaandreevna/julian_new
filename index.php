@@ -8,6 +8,7 @@ $page_suffix = "Julian Radio - ";
 require_once($home_dir . "/includes/ya-news.php");
 $notices = collection("Анонсы")->find(["public" => true])->toArray();
 $videos = collection("Видеогалерея")->find(["public" => true])->toArray();
+print_r($videos);
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
@@ -396,10 +397,11 @@ $videos = collection("Видеогалерея")->find(["public" => true])->toAr
 								<div class="cont video_page_cont">
                                     <div class="uk-container uk-container-center uk-text-center section">
                                         <h3 class="uk-text-center h3_section">Видео</h3>
-                                        <div class="video_panel uk-clearfix" data-uk-slideset="{animation: 'scale', default:6}">
+                                        <div class="video_panel uk-clearfix" data-uk-slideset="{animation: 'fade', default:6}">
                                             <!-- Filter Controls -->
                                             <ul id="video-filter" class="uk-subnav uk-subnav-pill">
                                                 <li data-uk-filter=""><a href="">Все</a></li>
+
                                                 <li data-uk-filter="filter-va"><a href="">Клипы</a></li>
                                                 <li data-uk-filter="filter-vb"><a href="">Концерты</a></li>
                                                 <li data-uk-filter="filter-vc"><a href="">Интервью</a></li>
@@ -414,13 +416,14 @@ $videos = collection("Видеогалерея")->find(["public" => true])->toAr
                                                     foreach($videos as $video){
                                                         $pieces = explode("/", $video["video"]);
                                                         ?>
-                                                        <li>
+                                                        <li data-uk-filter="filter-<?php echo $video["category"]; ?>">
                                                             <figure class="uk-panel uk-overlay uk-overlay-hover">
                                                                 <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
                                                                     <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
                                                                     <figcaption class="uk-overlay-panel uk-overlay-background">
                                                                         <h3><?php echo $video["name"]; ?></h3>
                                                                         <p><?php echo $video["text"]; ?></p>
+                                                                        <p><?php echo $video["category"]; ?></p>
                                                                     </figcaption>
                                                                 </a>
                                                             </figure>
@@ -431,146 +434,7 @@ $videos = collection("Видеогалерея")->find(["public" => true])->toAr
                                                         </li>
                                                     <?php }; ?>
 
-                                                    <?php
-                                                    foreach($videos as $video){
-                                                        $pieces = explode("/", $video["video"]);
-                                                        ?>
-                                                        <li>
-                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
-                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
-                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
-                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
-                                                                        <h3><?php echo $video["name"]; ?></h3>
-                                                                        <p><?php echo $video["text"]; ?></p>
-                                                                    </figcaption>
-                                                                </a>
-                                                            </figure>
-                                                            <!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
-                                                            <!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
-                                                            <!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
-                                                            <!--                                                            </a>-->
-                                                        </li>
-                                                    <?php }; ?>
-                                                    <?php
-                                                    foreach($videos as $video){
-                                                        $pieces = explode("/", $video["video"]);
-                                                        ?>
-                                                        <li>
-                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
-                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
-                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
-                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
-                                                                        <h3><?php echo $video["name"]; ?></h3>
-                                                                        <p><?php echo $video["text"]; ?></p>
-                                                                    </figcaption>
-                                                                </a>
-                                                            </figure>
-                                                            <!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
-                                                            <!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
-                                                            <!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
-                                                            <!--                                                            </a>-->
-                                                        </li>
-                                                    <?php }; ?>
-                                                    <?php
-                                                    foreach($videos as $video){
-                                                        $pieces = explode("/", $video["video"]);
-                                                        ?>
-                                                        <li>
-                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
-                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
-                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
-                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
-                                                                        <h3><?php echo $video["name"]; ?></h3>
-                                                                        <p><?php echo $video["text"]; ?></p>
-                                                                    </figcaption>
-                                                                </a>
-                                                            </figure>
-                                                            <!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
-                                                            <!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
-                                                            <!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
-                                                            <!--                                                            </a>-->
-                                                        </li>
-                                                    <?php }; ?>
-                                                    <?php
-                                                    foreach($videos as $video){
-                                                        $pieces = explode("/", $video["video"]);
-                                                        ?>
-                                                        <li>
-                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
-                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
-                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
-                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
-                                                                        <h3><?php echo $video["name"]; ?></h3>
-                                                                        <p><?php echo $video["text"]; ?></p>
-                                                                    </figcaption>
-                                                                </a>
-                                                            </figure>
-                                                            <!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
-                                                            <!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
-                                                            <!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
-                                                            <!--                                                            </a>-->
-                                                        </li>
-                                                    <?php }; ?>
-                                                    <?php
-                                                    foreach($videos as $video){
-                                                        $pieces = explode("/", $video["video"]);
-                                                        ?>
-                                                        <li>
-                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
-                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
-                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
-                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
-                                                                        <h3><?php echo $video["name"]; ?></h3>
-                                                                        <p><?php echo $video["text"]; ?></p>
-                                                                    </figcaption>
-                                                                </a>
-                                                            </figure>
-                                                            <!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
-                                                            <!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
-                                                            <!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
-                                                            <!--                                                            </a>-->
-                                                        </li>
-                                                    <?php }; ?>
-                                                    <?php
-                                                    foreach($videos as $video){
-                                                        $pieces = explode("/", $video["video"]);
-                                                        ?>
-                                                        <li>
-                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
-                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
-                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
-                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
-                                                                        <h3><?php echo $video["name"]; ?></h3>
-                                                                        <p><?php echo $video["text"]; ?></p>
-                                                                    </figcaption>
-                                                                </a>
-                                                            </figure>
-                                                            <!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
-                                                            <!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
-                                                            <!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
-                                                            <!--                                                            </a>-->
-                                                        </li>
-                                                    <?php }; ?>
-                                                    <?php
-                                                    foreach($videos as $video){
-                                                        $pieces = explode("/", $video["video"]);
-                                                        ?>
-                                                        <li>
-                                                            <figure class="uk-panel uk-overlay uk-overlay-hover">
-                                                                <a href="<?php echo $video["video"]; ?>" data-uk-lightbox="{group:'video_group'}">
-                                                                    <img src="http://img.youtube.com/vi/<?php echo end($pieces); ?>/0.jpg" alt="<?php echo $video["name"]; ?>">
-                                                                    <figcaption class="uk-overlay-panel uk-overlay-background">
-                                                                        <h3><?php echo $video["name"]; ?></h3>
-                                                                        <p><?php echo $video["text"]; ?></p>
-                                                                    </figcaption>
-                                                                </a>
-                                                            </figure>
-                                                            <!--                                                            <a href="--><?php //echo $video["video"]; ?><!--" data-uk-lightbox="{group:'video_group'}">-->
-                                                            <!--                                                                <p>--><?php //echo $video["name"]; ?><!--</p>-->
-                                                            <!--                                                                <img src="http://img.youtube.com/vi/--><?php //echo end($pieces); ?><!--/0.jpg">-->
-                                                            <!--                                                            </a>-->
-                                                        </li>
-                                                    <?php }; ?>
+
 
 
 
@@ -631,15 +495,15 @@ $videos = collection("Видеогалерея")->find(["public" => true])->toAr
                                                 <li data-uk-filter=""><a href="">Все</a></li>
                                                 <li data-uk-filter="filter-a"><a href="">Фотосессии</a></li>
                                                 <li data-uk-filter="filter-b"><a href="">Концерты</a></li>
-                                                <li data-uk-filter="filter-c"><a href="">Личное</a></li>
+<!--                                                <li data-uk-filter="filter-c"><a href="">Личное</a></li>-->
                                             </ul>
                                             <div class="uk-slidenav-position uk-float-left photo_slidenav">
                                                 <!-- Dynamic Grid -->
                                                 <ul class="uk-slideset uk-grid uk-grid-small uk-grid-width-1-6 "  data-uk-grid-margin="{cls:'mtr'}">
-                                                    <li data-uk-filter="filter-a">
+                                                    <li data-uk-filter="filter-c">
                                                         <figure class="uk-panel uk-overlay uk-overlay-hover">
                                                             <a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}">
-                                                                <img src="/img/albums/04-tyta.jpg" alt="">
+                                                                <img src="/img/albums/01-prob.jpg" alt="">
                                                                 <figcaption class="uk-overlay-panel uk-overlay-background">
                                                                     <h3>Обложка</h3>
                                                                     <p>Ты танцуешь, я пою</p>
