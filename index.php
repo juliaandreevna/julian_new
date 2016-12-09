@@ -8,7 +8,8 @@ $page_suffix = "Julian Radio - ";
 require_once($home_dir . "/includes/ya-news.php");
 $notices = collection("Анонсы")->find(["public" => true])->toArray();
 $videos = collection("Видеогалерея")->find(["public" => true])->toArray();
-print_r($videos);
+$entrys = collection("Биография")->find(["public" => true])->sort(["sort" => 1])->toArray();
+//print_r($videos);
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
@@ -176,7 +177,7 @@ print_r($videos);
 -->
 
 					<section class="panel " id="julianradio_page">
-<!--					<b>Julian Radio</b>-->
+
                         <div class="uk-container uk-container-center uk-text-center section">
                             <div class="julian_news">
                                 <ul class="notices">
@@ -194,9 +195,59 @@ print_r($videos);
                                     <li class="uk-vertical-align uk-text-right">
                                         <div class="uk-vertical-align-middle">
                                             <div class="order_speed">
-                                                <button class="uk-button ord_button" data-uk-modal="{target:'#my-id'}">
+                                                <button class="uk-button ord_button" data-uk-modal="{target:'#song'}">
                                                     Заказать песню
                                                 </button>
+                                                <div id="song" class="uk-modal">
+                                                    <div class="uk-modal-dialog">
+                                                        <a class="uk-modal-close uk-close"></a>
+                                                        <?php form('order_song', ["class" => "uk-form"]); ?>
+                                                        <div class="uk-hidden form-message-success">Данные успешно отправлены</div>
+                                                        <div class="uk-hidden form-message-fail">Не все поля заполнены</div>
+                                                        <div class="uk-hidden form-phone-fail">Номер телефона введен неверно</div>
+                                                        <div class="uk-form-row">
+                                                            <label class="uk-form-label star-none" for="form-s-it">От кого </label>
+                                                            <div class="uk-form-controls">
+                                                                <input type="text" name="form[name]" placeholder="Имя">
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-form-row">
+                                                            <label class="uk-form-label" for="form-s-it">Кому</label>
+                                                            <div class="uk-form-controls">
+                                                                <input type="text" name="form[for_name]" required1 placeholder="Имя">
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-form-row">
+                                                            <label class="uk-form-label" for="form-s-it">Название песни</label>
+                                                            <div class="uk-form-controls">
+                                                                <input type="text" name="form[song]" required1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-form-row">
+                                                            <label class="uk-form-label" for="form-s-it">Название города</label>
+                                                            <div class="uk-form-controls">
+                                                                <input type="text" name="form[city]" required1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-form-row">
+                                                            <div class="uk-form-controls">
+                                                                <textarea cols="30" rows="4" placeholder="Напишите пожелание"
+                                                                          name="form[message]"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-form-row">
+                                                            <label class="uk-form-label" for="form-s-it">Укажите телефон</label>
+                                                            <div class="uk-form-controls">
+                                                                <input type="text" class="phone_us" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ"
+                                                                       name="form[phone]" required1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-form-row">
+                                                            <button class="uk-button ord_button" type="submit">ОТПРАВИТЬ</button>
+                                                        </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
                                                 <ul class="speed">
                                                     <li><a href="mms://wm5.spacialnet.com/Julian_Radio_wma32" class="ord_button">32 кб/с</a>
                                                     </li>
@@ -547,14 +598,50 @@ print_r($videos);
                                 </div>
                             </section>
 							<section class="panel_slide bgimage panel_marg" id="biography_page">
+<!--							    <script src="/js/jquery.custom-scrollbar.js"></script>-->
 								<div class="cont biography_page_cont">
                                     <div class="uk-container uk-container-center uk-text-center section">
                                         <h3 class="uk-text-center h3_section">Биография Юлиана</h3>
                                         <div class="biography_panel">
+                                           <ul class="uk-grid uk-grid-collapse uk-grid-width-small-1-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-2">
+                                                <li>
+                                                    <div class="uk-scrollable-text biography_text">
+<!--                                                    <div class="uk-slidenav-position default-skin scrollable biography_text">-->
+                                                        <?php foreach($entrys as $entry){ ?>
+                                                        <?php echo $entry["text"]; ?>
+                                                        <?php }; ?>
+                                                    </div>
+                                                </li>
 
+                                                <li>
+                                                    <div class="biography_photo">
+                                                        
+                                                    </div>
+                                                </li>
+                                            </ul> 
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           
+<!--                                            <div class="uk-scrollable-text biography_text">-->
+<!--                                                <?php foreach($entrys as $entry){ ?>-->
+<!--                                                <?php echo $entry["text"]; ?>-->
+<!--                                                <?php }; ?>-->
+<!--                                            </div>-->
+                                            
+                                            
                                         </div>
                                     </div>
                                 </div>
+<!--
+                                <script type="text/javascript">
+                                    $(window).load(function () {
+                                        $(".biography_text").customScrollbar();
+                                    });
+                                </script>
+-->
 							</section>
 						</div>
 					</div>
