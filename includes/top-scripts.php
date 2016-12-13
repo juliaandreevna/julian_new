@@ -72,6 +72,7 @@
         });
     });
 </script>
+
 <script src="/js/jquery.simplemarquee.js"></script>
 <script>
     $(document).ready(function () {
@@ -85,6 +86,7 @@
         });
     });
 </script>
+
 <script type="text/javascript" src="/jplayer/jquery.jplayer.min.js"></script>
 <script type="text/javascript">
     //<![CDATA[
@@ -122,9 +124,69 @@
     //]]>
 </script>
 
+<!--<script src="/js/jquery.inputmask.js"></script>-->
+<!--<script>-->
+<!--    $(document).ready(function(){-->
+<!--        $(".phone_us").inputmask("mask", {"mask": "+7 (999) 999-9999"});-->
+<!--        $("[required1]").on("keypress", function () {-->
+<!--            $(this).removeClass("empty");-->
+<!--        });-->
+<!--        $(".submit-succes").on("click", function(){-->
+<!--            $(this).hide();-->
+<!--            return false;-->
+<!--        })-->
+<!--    });-->
+<!--</script>-->
+
+
+
+<!--ALTAIR-->
+
+<!-- uikit -->
+<!--<link rel="stylesheet" href="bower_components/uikit/css/uikit.almost-flat.min.css" media="all">-->
+
+<!-- flag icons -->
+<!--<link rel="stylesheet" href="/altair/icons/flags/flags.min.css" media="all">-->
+
+<!-- altair admin -->
+<!--<link rel="stylesheet" href="/altair/css/main.min.css" media="all">-->
+
+
+<!-- common functions -->
+<!--<script src="/altair/js/common.min.js"></script>-->
+<!-- uikit functions -->
+<!--<script src="/altair/js/uikit_custom.min.js"></script>-->
+<!-- altair common functions/helpers -->
+<!--<script src="/altair/js/altair_admin_common.min.js"></script>-->
+
+
+<!--<script>-->
+<!--    $(function() {-->
+<!--        // enable hires images-->
+<!--        altair_helpers.retina_images();-->
+<!--        // fastClick (touch devices)-->
+<!--        if(Modernizr.touch) {-->
+<!--            FastClick.attach(document.body);-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--<script type="text/javascript" src="js/lib/jquery.min.js"></script>-->
-
 
 
 

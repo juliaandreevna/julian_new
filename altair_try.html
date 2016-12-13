@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <!--ALTAIR-->
+
+<!-- uikit -->
+<link rel="stylesheet" href="/css/uikit.almost-flat.min.css"/>
+
+<!-- flag icons -->
+<link rel="stylesheet" href="/altair/icons/flags/flags.min.css" media="all">
+
+<!-- altair admin -->
+<link rel="stylesheet" href="/altair/css/main.min.css" media="all">
+
+
+<!-- common functions -->
+<script src="/altair/js/common.min.js"></script>
+<!-- uikit functions -->
+<script src="/altair/js/uikit_custom.min.js"></script>
+<!-- altair common functions/helpers -->
+<script src="/altair/js/altair_admin_common.min.js"></script>
+
+
+<script>
+    $(function() {
+        // enable hires images
+        altair_helpers.retina_images();
+        // fastClick (touch devices)
+        if(Modernizr.touch) {
+            FastClick.attach(document.body);
+        }
+    });
+</script>
+    
+</head>
+<body>
+    
+    <div class="contact_mail">
+        <h5>Написать письмо:</h5>
+        <div class="uk-form-row">
+            <label>Ваше имя</label>
+            <input type="text" class="md-input" />                                                    
+        </div>
+    </div>
+    
+</body>
+</html>
