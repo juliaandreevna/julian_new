@@ -1218,6 +1218,36 @@ img.play_img {
     background-color: #ffffff;
 }
 
+.cont_conc_org {
+    margin-top: 30px;
+    /*    position: fixed;*/
+}
+.cont_conc_org span {
+    line-height:30px;
+    font-size:20px;
+}
+
+.cont_conc_org a {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cont_conc_org span:before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background: url('/img/phone.svg') no-repeat center;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+
+
 .contact_mail {
     padding: 30px 20px 30px 20px;
     height: 390px;
@@ -1400,3 +1430,4 @@ img.play_img {
 .contact_mail form ul {
     margin: 0 0 15px 0;
 }
+

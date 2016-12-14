@@ -916,6 +916,11 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                         <li>
                                             <div class="contact_text">
                                                 <h5>По всем вопросам организации концертов и выступлений Юлиана:</h5>
+                                                <div class="cont_conc_org">
+                                                    <p>
+                                                        <span> <a href="tel:+7 (926) 492-67-67">+7 (926) 492-67-67</a></span>
+                                                    </p>
+                                                </div>
                                             </div>
                                         </li>
                                         <li>
