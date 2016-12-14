@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="/css/main.css"/>
 
 
+
 <script src="/js/jquery-3.1.0.min.js"></script>
 <script src="/js/uikit.min.js"></script>
 <!--<script src="/js/components/grid.min.js"></script>-->
@@ -123,6 +124,8 @@
     });
     //]]>
 </script>
+
+<script src="/js/form_scr.js"></script>
 
 <!--<script src="/js/jquery.inputmask.js"></script>-->
 <!--<script>-->
