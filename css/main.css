@@ -1203,9 +1203,16 @@ img.play_img {
 
 .contact_panel h5 {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 30px;
+    /*margin-bottom: 10px;*/
 }
+
+.contact_panel h5.que {
+    margin-bottom: 70px;
+}
+
+
 
 .contact_text {
     /*text-align: justify;*/
@@ -1214,23 +1221,40 @@ img.play_img {
     /*    padding-right: 10px;*/
     /*    padding: 20px;*/
     padding: 30px 20px 30px 20px;
-    height: 390px;
-    background-color: #ffffff;
+    /*height: 390px;*/
+    /*background-color: #ffffff;*/
+    /*margin-top: 40px;*/
+}
+
+.cont_bg1 {
+    background: url(/img/julian/3.jpg) center no-repeat;
+    background-size: cover;
+    content: '';
+    /*width: 100%;*/
+    /*    max-height: 450px;*/
+    height: 450px;
+}
+
+.cont_bg2 {
+    background-color: rgba(255,255,255,0.7);
+    content: '';
+    height: 450px;
 }
 
 .cont_conc_org {
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     /*    position: fixed;*/
+    margin-bottom: 40px;
 }
 .cont_conc_org span {
     line-height:30px;
-    font-size:20px;
+    font-size:25px;
 }
 
 .cont_conc_org a {
     font-family: 'Roboto', sans-serif;
     color: #333333;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 30px;
     text-decoration: none;
     font-weight: 500;

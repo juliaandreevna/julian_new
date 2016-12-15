@@ -914,14 +914,54 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                 <div class="contact_panel">
                                     <ul class="uk-grid uk-grid-collapse uk-grid-width-small-1-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-2">
                                         <li>
-                                            <div class="contact_text">
-                                                <h5>По всем вопросам организации концертов и выступлений Юлиана:</h5>
-                                                <div class="cont_conc_org">
-                                                    <p>
-                                                        <span> <a href="tel:+7 (926) 492-67-67">+7 (926) 492-67-67</a></span>
-                                                    </p>
+<!--                                            <div class="uk-cover uk-position-relative ">-->
+<!--                                                <video class="uk-cover-object uk-position-absolute" width="" height="" autoplay="autoplay" loop="loop" muted="muted"">-->
+<!--                                                    <source src="/video/videoplayback.mp4" type="">-->
+<!--                                                </video>-->
+<!--                                                <div class="uk-position-cover">-->
+<!--                                                    <div class="contact_text">-->
+<!--                                                        <h5>По всем вопросам организации концертов и выступлений Юлиана:</h5>-->
+<!--                                                        <div class="cont_conc_org">-->
+<!--                                                            <p>-->
+<!--                                                                <span> <a href="tel:+7 (926) 492-67-67">+7 (926) 492-67-67</a></span>-->
+<!--                                                            </p>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+
+
+<!--                                            <div class="uk-cover">-->
+<!--                                                <video class="uk-cover-object" width="" height=""">-->
+<!--                                                    <source src="/video/videoplayback.mp4" type="">-->
+<!--                                                </video>-->
+<!--                                            </div>-->
+
+                                            <div class="cont_bg1">
+                                                <div class="uk-vertical-align cont_bg2">
+                                                    <div class="uk-vertical-align-middle contact_text">
+                                                        <h5 class="que">По всем вопросам организации концертов и выступлений Юлиана:</h5>
+                                                        <div class="cont_conc_org">
+                                                            <p>
+                                                                <span> <a href="tel:+7 (926) 492-67-67">+7 (926) 492-67-67</a></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+
+<!--                                            <div class="uk-cover-background" style="height: 300px; background-image: url(images/placeholder_600x400.svg);"></div>-->
+
+
+<!--                                            <div class="contact_text">-->
+<!--                                                <h5>По всем вопросам организации концертов и выступлений Юлиана:</h5>-->
+<!--                                                <div class="cont_conc_org">-->
+<!--                                                    <p>-->
+<!--                                                        <span> <a href="tel:+7 (926) 492-67-67">+7 (926) 492-67-67</a></span>-->
+<!--                                                    </p>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+
                                         </li>
                                         <li>
                                             <div class="contact_mail">
