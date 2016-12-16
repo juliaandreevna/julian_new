@@ -515,7 +515,7 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                                                         class="uk-overlay-panel uk-overlay-background">
                                                                         <h3><?php echo $video["name"]; ?></h3>
                                                                         <p><?php echo $video["text"]; ?></p>
-                                                                        <p><?php echo $video["category"]; ?></p>
+<!--                                                                        <p>--><?php //echo $video["category"]; ?><!--</p>-->
                                                                     </figcaption>
                                                                 </a>
                                                             </figure>
@@ -533,44 +533,152 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                                     <?php }; ?>
 
 
-                                                    <!--                                                    <li data-uk-filter="filter-va">-->
-                                                    <!--                                                        <figure class="uk-panel uk-overlay uk-overlay-hover">-->
-                                                    <!--                                                            <a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}">-->
-                                                    <!--                                                                <img src="/img/albums/04-tyta.jpg" alt="">-->
-                                                    <!--                                                                <figcaption class="uk-overlay-panel uk-overlay-background">-->
-                                                    <!--                                                                    <h3>Обложка</h3>-->
-                                                    <!--                                                                    <p>Ты танцуешь, я пою</p>-->
-                                                    <!--                                                                </figcaption>-->
-                                                    <!--                                                            </a>-->
-                                                    <!--                                                        </figure>-->
-                                                    <!--                                                    </li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-vb,filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-vb,filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-vb,filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
-                                                    <!--                                                -->
+                                                    <li data-uk-filter="filter-va">
+                                                        <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                            <a href="https://youtu.be/Msfbb5-W4e0"
+                                                               data-uk-lightbox="{group:'video_group'}">
+                                                                <img
+                                                                    src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                                                    alt="Название">
+                                                                <figcaption
+                                                                    class="uk-overlay-panel uk-overlay-background">
+                                                                    <h3>Название</h3>
+                                                                    <p>Описание</p>
+                                                                </figcaption>
+                                                            </a>
+                                                        </figure>
+                                                    </li>
+                                                    <li data-uk-filter="filter-vb">
+                                                        <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                            <a href="https://youtu.be/Msfbb5-W4e0"
+                                                               data-uk-lightbox="{group:'video_group'}">
+                                                                <img
+                                                                    src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                                                    alt="Название">
+                                                                <figcaption
+                                                                    class="uk-overlay-panel uk-overlay-background">
+                                                                    <h3>Название</h3>
+                                                                    <p>Описание</p>
+                                                                </figcaption>
+                                                            </a>
+                                                        </figure>
+                                                    </li>
+                                                    <li data-uk-filter="filter-vc">
+                                                        <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                            <a href="https://youtu.be/Msfbb5-W4e0"
+                                                               data-uk-lightbox="{group:'video_group'}">
+                                                                <img
+                                                                    src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                                                    alt="Название">
+                                                                <figcaption
+                                                                    class="uk-overlay-panel uk-overlay-background">
+                                                                    <h3>Название</h3>
+                                                                    <p>Описание</p>
+                                                                </figcaption>
+                                                            </a>
+                                                        </figure>
+                                                    </li>
+                                                    <li data-uk-filter="filter-vd">
+                                                        <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                            <a href="https://youtu.be/Msfbb5-W4e0"
+                                                               data-uk-lightbox="{group:'video_group'}">
+                                                                <img
+                                                                    src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                                                    alt="Название">
+                                                                <figcaption
+                                                                    class="uk-overlay-panel uk-overlay-background">
+                                                                    <h3>Название</h3>
+                                                                    <p>Описание</p>
+                                                                </figcaption>
+                                                            </a>
+                                                        </figure>
+                                                    </li>
+                                                    <li data-uk-filter="filter-vf">
+                                                        <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                            <a href="https://youtu.be/Msfbb5-W4e0"
+                                                               data-uk-lightbox="{group:'video_group'}">
+                                                                <img
+                                                                    src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                                                    alt="Название">
+                                                                <figcaption
+                                                                    class="uk-overlay-panel uk-overlay-background">
+                                                                    <h3>Название</h3>
+                                                                    <p>Описание</p>
+                                                                </figcaption>
+                                                            </a>
+                                                        </figure>
+                                                    </li>
+                                                    <li data-uk-filter="filter-va">
+                                                        <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                            <a href="https://youtu.be/Msfbb5-W4e0"
+                                                               data-uk-lightbox="{group:'video_group'}">
+                                                                <img
+                                                                    src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                                                    alt="Название">
+                                                                <figcaption
+                                                                    class="uk-overlay-panel uk-overlay-background">
+                                                                    <h3>Название</h3>
+                                                                    <p>Описание</p>
+                                                                </figcaption>
+                                                            </a>
+                                                        </figure>
+                                                    </li>
+                                                    <li data-uk-filter="filter-vb">
+                                                        <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                                            <a href="https://youtu.be/Msfbb5-W4e0"
+                                                               data-uk-lightbox="{group:'video_group'}">
+                                                                <img
+                                                                    src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                                                    alt="Название">
+                                                                <figcaption
+                                                                    class="uk-overlay-panel uk-overlay-background">
+                                                                    <h3>Название</h3>
+                                                                    <p>Описание</p>
+                                                                </figcaption>
+                                                            </a>
+                                                        </figure>
+                                                    </li>
+
+
+                                                    <!---->
+<!--                                                    <li data-uk-filter="filter-va">-->
+<!--                                                        <figure class="uk-panel uk-overlay uk-overlay-hover">-->
+<!--                                                            <a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}">-->
+<!--                                                                <img src="/img/albums/04-tyta.jpg" alt="">-->
+<!--                                                                <figcaption class="uk-overlay-panel uk-overlay-background">-->
+<!--                                                                    <h3>Обложка</h3>-->
+<!--                                                                    <p>Ты танцуешь, я пою</p>-->
+<!--                                                                </figcaption>-->
+<!--                                                            </a>-->
+<!--                                                        </figure>-->
+<!--                                                    </li>-->
+<!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb,filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb,filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vb,filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-vc"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+<!--                                                    <li data-uk-filter="filter-va,filter-vb"><figure class="uk-panel uk-overlay uk-overlay-hover"><a href="/img/albums/04-tyta.jpg" data-uk-lightbox="{group:'my-group'}"><img src="/img/albums/04-tyta.jpg" alt=""><figcaption class="uk-overlay-panel uk-overlay-background"></figcaption></a></figure></li>-->
+
                                                 </ul>
                                                 <a href="#" class="uk-slidenav uk-slidenav-previous"
                                                    data-uk-slideset-item="previous"></a>
@@ -1116,11 +1224,11 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
 <script>
     $(document).ready(function () {
 
-//        setTimeout(function(){
-//            $('body').addClass('loaded')
-//        }, 3000);
+        setTimeout(function(){
+            $('body').addClass('loaded')
+        }, 3000);
 
-        $('body').addClass('loaded');
+//        $('body').addClass('loaded');
     })
 </script>
 
