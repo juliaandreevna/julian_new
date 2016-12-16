@@ -100,14 +100,14 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                         <div class="uk-vertical-align-middle"><img src="/img/menu/news.svg"/>Новости</div>
                     </div>
                 </a></li>
+            <li><a href="#audio_page">
+                    <div class="uk-vertical-align centered-2">
+                        <div class="uk-vertical-align-middle"><img src="/img/menu/program.svg"/>Аудио</div>
+                    </div>
+                </a></li>
             <li><a href="#pinContainer">
                     <div class="uk-vertical-align centered-2">
                         <div class="uk-vertical-align-middle"><img src="/img/menu/jul.svg"/>Юлиан</div>
-                    </div>
-                </a></li>
-            <li><a href="#forum_page">
-                    <div class="uk-vertical-align centered-2">
-                        <div class="uk-vertical-align-middle"><img src="/img/menu/program.svg"/>Форум</div>
                     </div>
                 </a></li>
             <li><a href="#contact_page">
@@ -371,114 +371,247 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                         </div>
                     </section>
 
+                    <section class="panel bgimage panel_marg" id="audio_page">
+                        <div class="uk-vertical-align cont audio_page_cont">
+                            <div
+                                class="uk-vertical-align-middle uk-container uk-container-center uk-text-center section">
+                                <h3 class="uk-text-center h3_section">Аудио</h3>
+                                <div class="audio_panel">
+                                    <ul class="uk-grid uk-grid-small uk-grid-width-small-1-2 uk-grid-width-medium-1-4 uk-grid-width-large-1-4"
+                                        data-uk-grid-margin="{cls:'mt'}"
+                                        data-uk-grid-parallax="{translate:100}">
+                                        <li>
+                                            <div class="album_panel grid">
+                                                <figure class="effect-apollo">
+                                                    <img src="/img/albums/08-meri.jpg" alt=""/>
+                                                    <figcaption>
+                                                        <p>Мэрилин<br><span>2016</span></p>
+                                                        <a href="#"></a>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="album_panel grid">
+                                                <figure class="effect-apollo">
+                                                    <img src="/img/albums/07-yata.jpg" alt=""/>
+                                                    <figcaption>
+                                                        <p>Я так сильно тебя люблю<br><span>2010</span></p>
+                                                        <a href="#"></a>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="album_panel grid">
+                                                <figure class="effect-apollo">
+                                                    <img src="/img/albums/01-prob.jpg" alt=""/>
+                                                    <figcaption>
+                                                        <p>Пробуждение<br><span>2003</span></p>
+                                                        <a href="#"></a>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="album_panel grid">
+                                                <figure class="effect-apollo">
+                                                    <img src="/img/albums/02-yana.jpg" alt=""/>
+                                                    <figcaption>
+                                                        <p>Я на арбате продаю дожди<br><span>2002</span></p>
+                                                        <a href="#"></a>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="album_panel grid">
+                                                <figure class="effect-apollo">
+                                                    <img src="/img/albums/03-neve.jpg" alt=""/>
+                                                    <figcaption>
+                                                        <p>Не верю в королей<br><span>1999</span></p>
+                                                        <a href="#"></a>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="album_panel grid">
+                                                <figure class="effect-apollo">
+                                                    <img src="/img/albums/04-tyta.jpg" alt=""/>
+                                                    <figcaption>
+                                                        <p>Ты танцуешь, я пою<br><span>1996</span></p>
+                                                        <a href="#"></a>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="album_panel grid">
+                                                <figure class="effect-apollo">
+                                                    <img src="/img/albums/05-lubi.jpg" alt=""/>
+                                                    <figcaption>
+                                                        <p>Люби меня<br><span>1995</span></p>
+                                                        <a href="#"></a>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="album_panel grid">
+                                                <figure class="effect-apollo">
+                                                    <img src="/img/albums/06-denj.jpg" alt=""/>
+                                                    <figcaption>
+                                                        <p>День рождения<br><span>1994</span></p>
+                                                        <a href="#denj" data-uk-modal></a>
+                                                        <!-- This is the modal -->
+                                                        <div id="denj" class="uk-modal">
+                                                            <div class="uk-modal-dialog">
+                                                                <a class="uk-modal-close uk-close"></a>
+<!--                                                                <i class="uk-icon-close uk-modal-close"></i>-->
+                                                                <iframe src="//tools.applemusic.com/embed/v1/album/1092573859?country=ru" height="500px" width="100%" frameborder="0"></iframe>
+                                                            </div>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    
                     <div id="pinContainer">
                         <div id="slideContainer">
-                            <section class="panel_slide bgimage panel_marg" id="audio_page">
-                                <div class="uk-vertical-align cont audio_page_cont">
+                            <section class="panel_slide bgimage" id="forum_page">
+
+                                <div class="uk-vertical-align cont forum_page_cont">
                                     <div
                                         class="uk-vertical-align-middle uk-container uk-container-center uk-text-center section">
-                                        <h3 class="uk-text-center h3_section">Аудио</h3>
-                                        <div class="audio_panel">
+                                        <h3 class="uk-text-center h3_section">Юлиан</h3>
+                                        <div class="forum_panel">
 
-                                            <ul class="uk-grid uk-grid-small uk-grid-width-small-1-2 uk-grid-width-medium-1-4 uk-grid-width-large-1-4"
-                                                data-uk-grid-margin="{cls:'mt'}"
-                                                data-uk-grid-parallax="{translate:100}">
-                                                <li>
-                                                    <div class="album_panel grid">
-                                                        <figure class="effect-apollo">
-                                                            <img src="/img/albums/08-meri.jpg" alt=""/>
-                                                            <figcaption>
-                                                                <p>Мэрилин<br><span>2016</span></p>
-                                                                <a href="#"></a>
-                                                            </figcaption>
-                                                        </figure>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="album_panel grid">
-                                                        <figure class="effect-apollo">
-                                                            <img src="/img/albums/07-yata.jpg" alt=""/>
-                                                            <figcaption>
-                                                                <p>Я так сильно тебя люблю<br><span>2010</span></p>
-                                                                <a href="#"></a>
-                                                            </figcaption>
-                                                        </figure>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="album_panel grid">
-                                                        <figure class="effect-apollo">
-                                                            <img src="/img/albums/01-prob.jpg" alt=""/>
-                                                            <figcaption>
-                                                                <p>Пробуждение<br><span>2003</span></p>
-                                                                <a href="#"></a>
-                                                            </figcaption>
-                                                        </figure>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="album_panel grid">
-                                                        <figure class="effect-apollo">
-                                                            <img src="/img/albums/02-yana.jpg" alt=""/>
-                                                            <figcaption>
-                                                                <p>Я на арбате продаю дожди<br><span>2002</span></p>
-                                                                <a href="#"></a>
-                                                            </figcaption>
-                                                        </figure>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="album_panel grid">
-                                                        <figure class="effect-apollo">
-                                                            <img src="/img/albums/03-neve.jpg" alt=""/>
-                                                            <figcaption>
-                                                                <p>Не верю в королей<br><span>1999</span></p>
-                                                                <a href="#"></a>
-                                                            </figcaption>
-                                                        </figure>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="album_panel grid">
-                                                        <figure class="effect-apollo">
-                                                            <img src="/img/albums/04-tyta.jpg" alt=""/>
-                                                            <figcaption>
-                                                                <p>Ты танцуешь, я пою<br><span>1996</span></p>
-                                                                <a href="#"></a>
-                                                            </figcaption>
-                                                        </figure>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="album_panel grid">
-                                                        <figure class="effect-apollo">
-                                                            <img src="/img/albums/05-lubi.jpg" alt=""/>
-                                                            <figcaption>
-                                                                <p>Люби меня<br><span>1995</span></p>
-                                                                <a href="#"></a>
-                                                            </figcaption>
-                                                        </figure>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="album_panel grid">
-                                                        <figure class="effect-apollo">
-                                                            <img src="/img/albums/06-denj.jpg" alt=""/>
-                                                            <figcaption>
-                                                                <p>День рождения<br><span>1994</span></p>
-                                                                <a href="#"></a>
-                                                            </figcaption>
-                                                        </figure>
-                                                    </div>
-                                                </li>
-
-                                            </ul>
                                         </div>
-
                                     </div>
                                 </div>
+
+
+<!--                                <div class="uk-vertical-align cont audio_page_cont">-->
+<!--                                    <div-->
+<!--                                        class="uk-vertical-align-middle uk-container uk-container-center uk-text-center section">-->
+<!--                                        <h3 class="uk-text-center h3_section">Аудио</h3>-->
+<!--                                        <div class="audio_panel">-->
+<!--                                            <ul class="uk-grid uk-grid-small uk-grid-width-small-1-2 uk-grid-width-medium-1-4 uk-grid-width-large-1-4"-->
+<!--                                                data-uk-grid-margin="{cls:'mt'}"-->
+<!--                                                data-uk-grid-parallax="{translate:100}">-->
+<!--                                                <li>-->
+<!--                                                    <div class="album_panel grid">-->
+<!--                                                        <figure class="effect-apollo">-->
+<!--                                                            <img src="/img/albums/08-meri.jpg" alt=""/>-->
+<!--                                                            <figcaption>-->
+<!--                                                                <p>Мэрилин<br><span>2016</span></p>-->
+<!--                                                                <a href="#"></a>-->
+<!--                                                            </figcaption>-->
+<!--                                                        </figure>-->
+<!--                                                    </div>-->
+<!--                                                </li>-->
+<!--                                                <li>-->
+<!--                                                    <div class="album_panel grid">-->
+<!--                                                        <figure class="effect-apollo">-->
+<!--                                                            <img src="/img/albums/07-yata.jpg" alt=""/>-->
+<!--                                                            <figcaption>-->
+<!--                                                                <p>Я так сильно тебя люблю<br><span>2010</span></p>-->
+<!--                                                                <a href="#"></a>-->
+<!--                                                            </figcaption>-->
+<!--                                                        </figure>-->
+<!--                                                    </div>-->
+<!--                                                </li>-->
+<!--                                                <li>-->
+<!--                                                    <div class="album_panel grid">-->
+<!--                                                        <figure class="effect-apollo">-->
+<!--                                                            <img src="/img/albums/01-prob.jpg" alt=""/>-->
+<!--                                                            <figcaption>-->
+<!--                                                                <p>Пробуждение<br><span>2003</span></p>-->
+<!--                                                                <a href="#"></a>-->
+<!--                                                            </figcaption>-->
+<!--                                                        </figure>-->
+<!--                                                    </div>-->
+<!--                                                </li>-->
+<!--                                                <li>-->
+<!--                                                    <div class="album_panel grid">-->
+<!--                                                        <figure class="effect-apollo">-->
+<!--                                                            <img src="/img/albums/02-yana.jpg" alt=""/>-->
+<!--                                                            <figcaption>-->
+<!--                                                                <p>Я на арбате продаю дожди<br><span>2002</span></p>-->
+<!--                                                                <a href="#"></a>-->
+<!--                                                            </figcaption>-->
+<!--                                                        </figure>-->
+<!--                                                    </div>-->
+<!--                                                </li>-->
+<!--                                                <li>-->
+<!--                                                    <div class="album_panel grid">-->
+<!--                                                        <figure class="effect-apollo">-->
+<!--                                                            <img src="/img/albums/03-neve.jpg" alt=""/>-->
+<!--                                                            <figcaption>-->
+<!--                                                                <p>Не верю в королей<br><span>1999</span></p>-->
+<!--                                                                <a href="#"></a>-->
+<!--                                                            </figcaption>-->
+<!--                                                        </figure>-->
+<!--                                                    </div>-->
+<!--                                                </li>-->
+<!--                                                <li>-->
+<!--                                                    <div class="album_panel grid">-->
+<!--                                                        <figure class="effect-apollo">-->
+<!--                                                            <img src="/img/albums/04-tyta.jpg" alt=""/>-->
+<!--                                                            <figcaption>-->
+<!--                                                                <p>Ты танцуешь, я пою<br><span>1996</span></p>-->
+<!--                                                                <a href="#"></a>-->
+<!--                                                            </figcaption>-->
+<!--                                                        </figure>-->
+<!--                                                    </div>-->
+<!--                                                </li>-->
+<!--                                                <li>-->
+<!--                                                    <div class="album_panel grid">-->
+<!--                                                        <figure class="effect-apollo">-->
+<!--                                                            <img src="/img/albums/05-lubi.jpg" alt=""/>-->
+<!--                                                            <figcaption>-->
+<!--                                                                <p>Люби меня<br><span>1995</span></p>-->
+<!--                                                                <a href="#"></a>-->
+<!--                                                            </figcaption>-->
+<!--                                                        </figure>-->
+<!--                                                    </div>-->
+<!--                                                </li>-->
+<!--                                                <li>-->
+<!---->
+<!--                                                    <div class="album_panel grid">-->
+<!--                                                        <figure class="effect-apollo">-->
+<!--                                                            <img src="/img/albums/06-denj.jpg" alt=""/>-->
+<!--                                                            <figcaption>-->
+<!---->
+<!--                                                                <p>День рождения<br><span>1994</span></p>-->
+<!--                                                                <a href="#denj" data-uk-modal></a>-->
+<!--                                                                <!-- This is the modal -->-->
+<!--                                                                <div id="denj" class="uk-modal">-->
+<!--                                                                    <div class="uk-modal-dialog">-->
+<!--                                                                        <a class="uk-modal-close uk-close"></a>-->
+<!--                                                                        <iframe src="//tools.applemusic.com/embed/v1/album/1092573859?country=ru" height="500px" width="100%" frameborder="0"></iframe>-->
+<!--                                                                    </div>-->
+<!--                                                                </div>-->
+<!--                                                            </figcaption>-->
+<!--                                                        </figure>-->
+<!--                                                    </div>-->
+<!--                                                </li>-->
+<!---->
+<!--                                            </ul>-->
+<!--                                        </div>-->
+<!---->
+<!--                                    </div>-->
+<!--                                </div>-->
                             </section>
-                            <section class="panel_slide bgimage panel_marg" id="video_page">
+                            <section class="panel_slide bgimage" id="video_page">
                                 <div class="uk-vertical-align cont video_page_cont">
                                     <div
                                         class="uk-vertical-align-middle uk-container uk-container-center uk-text-center section">
@@ -690,7 +823,7 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                     </div>
                                 </div>
                             </section>
-                            <section class="panel_slide bgimage panel_marg" id="photo_page">
+                            <section class="panel_slide bgimage" id="photo_page">
                                 <div class="uk-vertical-align cont photo_page_cont">
                                     <div
                                         class="uk-vertical-align-middle uk-container uk-container-center uk-text-center section">
@@ -966,7 +1099,7 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                     </div>
                                 </div>
                             </section>
-                            <section class="panel_slide bgimage panel_marg" id="biography_page">
+                            <section class="panel_slide bgimage" id="biography_page">
                                 <!--							    <script src="/js/jquery.custom-scrollbar.js"></script>-->
                                 <div class="uk-vertical-align cont biography_page_cont">
                                     <div
@@ -1004,17 +1137,17 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                         </div>
                     </div>
 
-                    <section class="panel bgimage panel_marg" id="forum_page">
-                        <div class="uk-vertical-align cont forum_page_cont">
-                            <div
-                                class="uk-vertical-align-middle uk-container uk-container-center uk-text-center section">
-                                <h3 class="uk-text-center h3_section">Форум</h3>
-                                <div class="forum_panel">
-
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+<!--                    <section class="panel bgimage panel_marg" id="forum_page">-->
+<!--                        <div class="uk-vertical-align cont forum_page_cont">-->
+<!--                            <div-->
+<!--                                class="uk-vertical-align-middle uk-container uk-container-center uk-text-center section">-->
+<!--                                <h3 class="uk-text-center h3_section">Форум</h3>-->
+<!--                                <div class="forum_panel">-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </section>-->
+                    
                     <section class="panel bgimage panel_marg" id="contact_page">
                         <div class="uk-vertical-align cont contact_page_cont">
                             <div class="uk-vertical-align-middle uk-container uk-container-center uk-text-center section">

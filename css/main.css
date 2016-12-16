@@ -1065,6 +1065,24 @@ img.play_img {
     box-shadow: 0px 3px 3px 0.00px rgba(0, 0, 0, 0.24);
 }
 
+/*gлеер модульное окно*/
+
+/*.audio_panel iframe .heroLogo {*/
+    /*display: none;*/
+/*}*/
+
+/*.grid figure figcaption .uk-close {*/
+    /*color: #333333!important;*/
+    /*position: relative;*/
+    /*top: 25px;*/
+    /*right: 25px;*/
+/*}*/
+
+/*.uk-modal-dialog>.uk-close:first-child {*/
+    /*margin: -20px 0px 0 0;*/
+/*}*/
+
+
 /*-------------------*/
 /*СТРАНИЦА ВИДЕО*/
 /*-------------------*/
